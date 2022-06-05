@@ -4,7 +4,7 @@ ENV='gharaffa-NTFT20'
 BUF_TYPE='stationary' ## 'stationary' for 1-day batch and 'stationary2' for 1-week batch, 'moving' for partialRL both sizes
 BUF=$BUF_TYPE'-NTFT20'
 SEED=20
-ID_TOKEN='dac-r0.5-sample-2-nmode0.6-nostate'
+ID_TOKEN='dac-r0.5-sample-2-nmode0.8-nostate'
 
 python run-offline-rl.py \
         --env=$ENV \

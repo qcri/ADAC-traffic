@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Fri Jul  5 15:46:18 2019 by Eclipse SUMO GUI Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/Users/srizzo/TrafQ/Environments/gym-greenwave/gymGreenWave/assets/netGreenWave.net.xml"/>
+        <route-files value="/Users/srizzo/TrafQ/Environments/gym-greenwave/gymGreenWave/assets/vehicles.rou.xml"/>
+        <additional-files value="/Users/srizzo/TrafQ/Environments/gym-greenwave/gymGreenWave/assets/greenWaveAdditionals.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="10000000"/>
+        <step-length value="1.0"/>
+    </time>
+
+    <processing>
+        <collision.action value="teleport"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="56149"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="/Users/srizzo/TrafQ/Environments/gym-greenwave/gymGreenWave/assets/vehicles.settings.xml"/>
+        <start value="true"/>
+        <tracker-interval value="1"/>
+    </gui_only>
+
+</configuration>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sun Jun 27 14:07:02 2021 by Eclipse SUMO GUI Version v1_1_0+0000-2147d155b1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/SIMULATION/gharrafa.net.xml"/>
+        <route-files value="/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/SIMULATION/../MATOD/gha_tripsH1_jun2021.rou.xml"/>
+        <additional-files value="/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/SIMULATION/../TAZ/gharrafa_taz.xml"/>
+    </input>
+
+    <output>
+        <queue-output value="/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/SIMULATION/OUT_1H/outBASE_queue.xml"/>
+        <lanechange-output value="/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/SIMULATION/OUT_1H/outBASE_lanechange.xml"/>
+    </output>
+
+    <time>
+        <begin value="25200"/>
+        <end value="28800"/>
+        <step-length value="0.5"/>
+    </time>
+
+    <processing>
+        <ignore-junction-blocker value="3"/>
+        <collision.action value="remove"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+        <scale value="1"/>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <no-warnings value="true"/>
+        <log value="/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/SIMULATION/OUT_1H/log.txt"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="54256"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/SIMULATION/gui.settings.xml"/>
+        <start value="true"/>
+        <tracker-interval value="0.5"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<lanechanges>
+</lanechanges>

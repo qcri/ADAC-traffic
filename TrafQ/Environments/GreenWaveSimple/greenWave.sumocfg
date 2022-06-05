@@ -1,0 +1,12 @@
+<configuration>
+    <input>
+        <net-file value="netGreenWave.net.xml"/>
+        <route-files value="vehicles.rou.xml"/>
+        <additional-files value = "greenWaveAdditionals.xml"/>
+        <gui-settings-file value="vehicles.settings.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="10000000"/>
+    </time>
+</configuration>

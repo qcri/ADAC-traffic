@@ -1,0 +1,20 @@
+***Starting server on port 56912 ***
+Loading net-file from '/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/gharrafa.net.xml'... done (61ms).
+Loading additional-files from '/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/TAZ/gharrafa_taz.xml'... done (1ms).
+Loading additional-files from '/Users/mayureshkunjir/Projects/TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/e1test.xml'... done (24ms).
+Loading done.
+Simulation started with time: 25200.00
+Simulation ended at time: 27230.50
+Reason: TraCI requested termination.
+Performance: 
+ Duration: 98904ms
+ Real time factor: 20.53
+ UPS: 9481.770201
+Vehicles: 
+ Inserted: 1710 (Loaded: 1860)
+ Running: 506
+ Waiting: 0
+Teleports: 0 (Collisions: 39)
+
+DijkstraRouter answered 1710 queries and explored 101.93 edges on average.
+DijkstraRouter spent 62ms answering queries (0.04ms on average).

@@ -1,0 +1,76 @@
+<routes>
+    <vType accel="10" decel= "9" id="Car" length="2.0" maxSpeed="100.0" sigma="0.0" />
+    <route id="mainRoad1" edges="gneE0 gneE1 gneE2 gneE3 gneE4"/>
+    <route id="mainRoad2" edges="-gneE4 -gneE3 -gneE2 -gneE1 -gneE0"/>
+    <!-- travel west to east -->
+    <flows>
+        <flow id="flow1" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+        <flow id="flow2" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+        <flow id="flow3" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+        <flow id="flow4" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+        <flow id="flow5" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+        <flow id="flow6" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+        <flow id="flow7" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+        <flow id="flow8" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+        <flow id="flow9" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+        <flow id="flow10" from="gneE0" to="gneE4" begin="0" end="3600" number="100"/>
+    </flows>
+
+     <flows>
+        <flow id="-flow1" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+        <flow id="-flow2" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+        <flow id="-flow3" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+        <flow id="-flow4" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+        <flow id="-flow5" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+        <flow id="-flow6" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+        <flow id="-flow7" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+        <flow id="-flow8" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+        <flow id="-flow9" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+        <flow id="-flow10" from="-gneE4" to="-gneE0" begin="0" end="3600" number="100"/>
+    </flows>
+     <!-- travel N-S and S-N along the first intersection -->
+    <flows>
+        <flow id="first1" from="gneE6" to="gneE7" begin="0" end="3600" number="100"/>
+        <flow id="first2" from="gneE6" to="gneE7" begin="0" end="3600" number="100"/>
+        <flow id="first3" from="gneE6" to="gneE7" begin="0" end="3600" number="100"/>
+        <flow id="first4" from="gneE6" to="gneE7" begin="0" end="3600" number="100"/>
+        <flow id="first5" from="-gneE7" to="-gneE6" begin="0" end="3600" number="100"/>
+        <flow id="first6" from="-gneE7" to="-gneE6" begin="0" end="3600" number="100"/>
+        <flow id="first7" from="-gneE7" to="-gneE6" begin="0" end="3600" number="100"/>
+        <flow id="first8" from="-gneE7" to="-gneE6" begin="0" end="3600" number="100"/>
+    </flows>
+  <!-- travel N-S and S-N along the second intersection -->
+    <flows>
+        <flow id="second1" from="gneE8" to="gneE9" begin="0" end="3600" number="100"/>
+        <flow id="second2" from="gneE8" to="gneE9" begin="0" end="3600" number="100"/>
+        <flow id="second3" from="gneE8" to="gneE9" begin="0" end="3600" number="100"/>
+        <flow id="second4" from="gneE8" to="gneE9" begin="0" end="3600" number="100"/>
+        <flow id="second5" from="-gneE9" to="-gneE8" begin="0" end="3600" number="100"/>
+        <flow id="second6" from="-gneE9" to="-gneE8" begin="0" end="3600" number="100"/>
+        <flow id="second7" from="-gneE9" to="-gneE8" begin="0" end="3600" number="100"/>
+        <flow id="second8" from="-gneE9" to="-gneE8" begin="0" end="3600" number="100"/>       
+    </flows>
+     <!--travel N-S and S-N along the third intersection -->
+    <flows>
+        <flow id="third1" from="gneE10" to="gneE11" begin="0" end="3600" number="100"/>
+        <flow id="third2" from="gneE10" to="gneE11" begin="0" end="3600" number="100"/>
+        <flow id="third3" from="gneE10" to="gneE11" begin="0" end="3600" number="100"/>
+        <flow id="third4" from="gneE10" to="gneE11" begin="0" end="3600" number="100"/>
+        <flow id="third5" from="-gneE11" to="-gneE10" begin="0" end="3600" number="100"/>
+        <flow id="third6" from="-gneE11" to="-gneE10" begin="0" end="3600" number="100"/>
+        <flow id="third7" from="-gneE11" to="-gneE10" begin="0" end="3600" number="100"/>
+        <flow id="third8" from="-gneE11" to="-gneE10" begin="0" end="3600" number="100"/>
+    </flows>
+    <!-- travel N-S and S-N along the fourth intersection -->
+    <flows>
+        <flow id="fourth1" from="gneE12" to="gneE13" begin="0" end="3600" number="100"/>
+        <flow id="fourth2" from="gneE12" to="gneE13" begin="0" end="3600" number="100"/>
+        <flow id="fourth3" from="gneE12" to="gneE13" begin="0" end="3600" number="100"/>
+        <flow id="fourth4" from="gneE12" to="gneE13" begin="0" end="3600" number="100"/>
+        <flow id="fourth5" from="-gneE13" to="-gneE12" begin="0" end="3600" number="100"/>
+        <flow id="fourth6" from="-gneE13" to="-gneE12" begin="0" end="3600" number="100"/>
+        <flow id="fourth7" from="-gneE13" to="-gneE12" begin="0" end="3600" number="100"/>
+        <flow id="fourth8" from="-gneE13" to="-gneE12" begin="0" end="3600" number="100"/>
+    </flows>
+    </routes>
+

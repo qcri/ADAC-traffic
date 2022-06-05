@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue Jun 25 15:06:45 2019 by Eclipse SUMO netedit Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/Users/anuvellore/QCRI/Test%20Network/netGreenWave.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/Users/anuvellore/QCRI/Test%20Network/netGreenWave.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/Users/anuvellore/QCRI/Test%20Network/greenWaveAdditionals.xml"/>
+    </netedit>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <e2Detector id="e2Detector_--gneE13_0_14" length="5.00" lane="--gneE13_0" pos="7.07" freq="900.00" file="e2Detector_--gneE13_0_14.xml"/>
+    <e2Detector id="e2Detector_--gneE14_0_17" length="5.00" lane="--gneE14_0" pos="7.93" freq="900.00" file="e2Detector_--gneE14_0_17.xml"/>
+    <e2Detector id="e2Detector_--gneE15_0_20" length="5.00" lane="--gneE15_0" pos="8.79" freq="900.00" file="e2Detector_--gneE15_0_20.xml"/>
+    <e2Detector id="e2Detector_--gneE16_0_23" length="5.00" lane="--gneE16_0" pos="9.66" freq="900.00" file="e2Detector_--gneE16_0_23.xml"/>
+    <e2Detector id="e2Detector_-gneE13_0_4" length="40.00" lane="-gneE13_0" pos="56.18" freq="900.00" file="e2Detector_-gneE13_0_4.xml"/>
+    <e2Detector id="e2Detector_-gneE14_0_7" length="40.00" lane="-gneE14_0" pos="55.64" freq="900.00" file="e2Detector_-gneE14_0_7.xml"/>
+    <e2Detector id="e2Detector_-gneE15_0_9" length="40.00" lane="-gneE15_0" pos="54.57" freq="900.00" file="e2Detector_-gneE15_0_9.xml"/>
+    <e2Detector id="e2Detector_-gneE16_0_11" length="40.00" lane="-gneE16_0" pos="54.84" freq="900.00" file="e2Detector_-gneE16_0_11.xml"/>
+    <e2Detector id="e2Detector_gneE13_0_5" length="40.00" lane="gneE13_0" pos="55.59" freq="900.00" file="e2Detector_gneE13_0_5.xml"/>
+    <e2Detector id="e2Detector_gneE14_0_6" length="40.00" lane="gneE14_0" pos="54.79" freq="900.00" file="e2Detector_gneE14_0_6.xml"/>
+    <e2Detector id="e2Detector_gneE15_0_8" length="40.00" lane="gneE15_0" pos="56.13" freq="900.00" file="e2Detector_gneE15_0_8.xml"/>
+    <e2Detector id="e2Detector_gneE16_0_10" length="40.00" lane="gneE16_0" pos="54.79" freq="900.00" file="e2Detector_gneE16_0_10.xml"/>
+    <e2Detector id="e2Detector_gneE20_0_0" length="60.00" lane="gneE20_0" pos="35.00" freq="900.00" file="e2Detector_gneE20_0_0.xml"/>
+    <e2Detector id="e2Detector_gneE21_0_1" length="60.00" lane="gneE21_0" pos="35.00" freq="900.00" file="e2Detector_gneE21_0_1.xml"/>
+    <e2Detector id="e2Detector_gneE21_0_13" length="5.00" lane="gneE21_0" pos="8.20" freq="900.00" file="e2Detector_gneE21_0_13.xml"/>
+    <e2Detector id="e2Detector_gneE22_0_16" length="5.00" lane="gneE22_0" pos="7.11" freq="900.00" file="e2Detector_gneE22_0_16.xml"/>
+    <e2Detector id="e2Detector_gneE22_0_2" length="60.00" lane="gneE22_0" pos="35.00" freq="900.00" file="e2Detector_gneE22_0_2.xml"/>
+    <e2Detector id="e2Detector_gneE23_0_19" length="5.00" lane="gneE23_0" pos="8.60" freq="900.00" file="e2Detector_gneE23_0_19.xml"/>
+    <e2Detector id="e2Detector_gneE23_0_3" length="60.00" lane="gneE23_0" pos="35.00" freq="900.00" file="e2Detector_gneE23_0_3.xml"/>
+    <e2Detector id="e2Detector_gneE24_0_22" length="5.00" lane="gneE24_0" pos="6.64" freq="900.00" file="e2Detector_gneE24_0_22.xml"/>
+    <e2Detector id="e2Detector_gneE35_0_12" length="5.00" lane="gneE35_0" pos="6.76" freq="900.00" file="e2Detector_gneE35_0_12.xml"/>
+    <e2Detector id="e2Detector_gneE38_0_15" length="5.00" lane="gneE38_0" pos="7.62" freq="900.00" file="e2Detector_gneE38_0_15.xml"/>
+    <e2Detector id="e2Detector_gneE39_0_22" length="5.00" lane="gneE39_0" pos="6.56" freq="900.00" file="e2Detector_gneE39_0_22.xml"/>
+    <e2Detector id="e2Detector_gneE41_0_23" length="5.00" lane="gneE41_0" pos="8.28" freq="900.00" file="e2Detector_gneE41_0_23.xml"/>
+</additional>

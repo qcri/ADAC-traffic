@@ -1,0 +1,1 @@
+od2trips -c od2trips_H1.cfg -n ../TAZ/gharrafa_taz.xml -d gharrafaMatOD_H1_jun2021 -o gha_tripsH1_jun2021.rou.xml 

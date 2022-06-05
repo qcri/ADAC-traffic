@@ -1,0 +1,40 @@
+<configuration>
+    <input>
+        <net-file value="gharrafa.net.xml"/>
+        <route-files value="../MATOD/gha_tripsH1_jun2021.rou.xml"/>
+        <gui-settings-file value="gui.settings.xml"/>
+	<additional-files value="../TAZ/gharrafa_taz.xml"/> 
+        <start value="true"/>     
+    </input>
+    <time>
+        <begin value="25200"/>
+        <end value="28800"/>
+        <step-length value='0.5'/>
+    </time>
+    <processing>
+        <device.rerouting.with-taz/>
+	<collision.action value="remove"/>
+        <collision.check-junctions value="true"/>
+	<collision.mingap-factor value="0"/>
+        <time-to-teleport value="-1"/>
+        <ignore-junction-blocker value="3"/>
+        <scale value="1"/>
+    </processing>
+    <output>
+        <queue-output value="OUT_1H/outBASE_queue.xml"/>
+        <lanechange-output value="OUT_1H/outBASE_lanechange.xml"/>
+    </output>
+    <traci_server>
+  	<remote-port value="8816"/>
+    </traci_server>
+    <report>
+        <log value="OUT_1H/log.txt"/>  
+    </report>
+
+  </configuration>
+    
+
+
+   
+    
+    

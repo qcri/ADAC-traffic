@@ -98,7 +98,7 @@ class dac_policy(object):
         self.diameter = diameter
         assert self.diameter > 0
         self.rmax = self.replay_df['reward'].max()
-        self.alpha = 0.6 # The maximum distance threshold to avoid far-off neighbors
+        self.alpha = 0.8 # The maximum distance threshold to avoid far-off neighbors
 
         self.q_model = q_model
         self.device = device
