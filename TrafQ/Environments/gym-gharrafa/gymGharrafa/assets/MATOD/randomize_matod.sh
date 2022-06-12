@@ -2,8 +2,8 @@
 START_HOUR=$1
 END_HOUR=$((1+START_HOUR))
 NUMBER_OF_OPS=6
-op_file_prefix="gharrafaMatOD_"$START_HOUR"-"$END_HOUR"_R"
-ip_file="gharrafaMatOD_"$START_HOUR"-"$END_HOUR"_R0"
+op_file_prefix="ecMatOD_"$START_HOUR"-"$END_HOUR"_R"
+ip_file="ecMatOD_"$START_HOUR"-"$END_HOUR"_R0"
 
 for ((i=1; i<=$NUMBER_OF_OPS; i++)); do
   head -6 $ip_file > "$op_file_prefix$i"

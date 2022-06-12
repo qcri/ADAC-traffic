@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-06-12 15:57:11 by Eclipse SUMO GUI Version 1.13.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec.net.xml"/>
+        <route-files value="C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec_pt.rou.xml,C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec.passenger.trips.xml,C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec.bus.trips.xml,C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec.bicycle.trips.xml,C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec.pedestrian.rou.xml,C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec.tram.trips.xml"/>
+        <additional-files value="C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec.poly.xml,C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec_stops.add.xml,C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\tramtll.add.xml,C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec_detectors.xml,C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\ec_taz.xml"/>
+    </input>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="18"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value="C:\Users\hamza\Documents\ADAC-traffic\TrafQ\Environments\gym-gharrafa\gymGharrafa\assets\gui.settings.xml"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+    <interval begin="0.00" end="234.00" id="e1_75" nVehContrib="1" flow="15.38" occupancy="1.00" speed="2.13" harmonicMeanSpeed="2.13" length="5.00" nVehEntered="1"/>
+</detector>

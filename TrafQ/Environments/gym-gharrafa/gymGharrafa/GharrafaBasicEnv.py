@@ -12,15 +12,16 @@ from shutil import copyfile
 import numpy as np
 
 import gym
-from gym import spaces,error
+from gym import spaces, error
 from gym.utils import seeding
 
 import traci
 
 module_path = os.path.dirname(__file__)
 
+
 class GharrafaBasicEnv(gym.Env):
-    def __init__(self,GUI=True,Play=None):
+    def __init__(self, GUI=True, Play=None):
 
         self.tlsID = "6317"
         self._seed = 31337
@@ -29,73 +30,83 @@ class GharrafaBasicEnv(gym.Env):
         self.Play = Play
 
         self.PHASES = {
-        0: "G E",
-        1: "G N",
-        2: "G W",
-        3: "G S",
-        4: "ALL RED",
-        5: "G EW",
-        6: "G NS",
-        7: "G E BY W",
-        8: "G N BY S",
-        9: "G S BY N",
-        10: "G W BY E"
+            0: "G E",
+            1: "G N",
+            2: "G W",
+            3: "G S",
+            4: "ALL RED",
+            5: "G EW",
+            6: "G NS",
+            7: "G E BY W",
+            8: "G N BY S",
+            9: "G S BY N",
+            10: "G W BY E"
         }
 
-        self.monitored_edges = ["7552",
-        "7553",
-        "7554",
-        "7556",
-        "7558",
-        "7560",
-        "7562",
-        "7563",
-        "7565",
-        "7574",
-        "6043",
-        "7593",
-        "7594",
-        "7621",
-        "7623",
-        "10324",
-        "10339",
-        "6124",
-        "7665",
-        "7542",
-        "7673",
-        "7547",
-        "7548",
-        "7549",
-        "7550"]
+        self.monitored_edges = ["1040882902#1",
+                                "665453550",
+                                "665453552",
+                                "665453546",
+                                "584750383#0",
+                                "584750383#1",
+                                "854038215#1",
+                                "854038215#0",
+                                "1040882902#0",
+                                "1042695124",
+                                "618371789#1",
+                                "479797339",
+                                "1042446268",
+                                "665453547",
+                                "764267604",
+                                "764267605",
+                                "622873931#0",
+                                "622873931#1",
+                                "622873934#7",
+                                "622873934#8",
+                                "665453548",
+                                "1032698564#1",
+                                "1032698564#0",
+                                "1042698681#0",
+                                "1042698681#1",
+                                "1042728028#1",
+                                "25931028#5",
+                                "25931028#6",
+                                "1042728028#0",
+                                "665453544",
+                                "584750387",
+                                "665453549",
+                                "584750385#1",
+                                "1042693363#1",
+                                "1042453357",
+                                "622873934#9"]
 
         self.DETECTORS = []
-        with open(module_path +"/assets/gharrafa_detectors") as fdet:
+        with open(module_path + "/assets/ec_detectors") as fdet:
             for detname in fdet:
                 self.DETECTORS.append(detname[:-1])
 
-        #how many SUMO seconds before next step (observation/action)
+        # how many SUMO seconds before next step (observation/action)
         self.OBSERVEDPERIOD = 10
         self.SUMOSTEP = 0.5
 
-        #In this version the observation space is the set of sensors
-        self.observation_space = spaces.Box(low=0, high=255, shape=(1,68), dtype=np.uint8)
+        # In this version the observation space is the set of sensors
+        self.observation_space = spaces.Box(low=0, high=255, shape=(1, 68), dtype=np.uint8)
 
-        #Set action space as the set of possible phases
+        # Set action space as the set of possible phases
         self.action_space = spaces.Discrete(11)
 
         self.spec = {}
 
-        #Generate an alphanumerical code for the run label (to run multiple simulations in parallel)
+        # Generate an alphanumerical code for the run label (to run multiple simulations in parallel)
         self.runcode = "".join(random.choices(string.ascii_lowercase + string.digits, k=6))
 
         self.timestep = 0
 
         self._configure_environment()
 
-    def seed(self,seed=None):
+    def seed(self, seed=None):
         self.np_random, seed = seeding.np_random(seed)
         return [seed]
-
 
     def _configure_environment(self):
 
@@ -104,14 +115,14 @@ class GharrafaBasicEnv(gym.Env):
         else:
             sumoBinary = set_sumo_home.sumoBinary
 
-        self.argslist = [sumoBinary, "-c", module_path+"/assets/tl.sumocfg",
-                             "--collision.action", "remove",
-            "--step-length", str(self.SUMOSTEP), "-S", "--time-to-teleport", "-1",
-            "--collision.mingap-factor", "0",
-            "--collision.check-junctions", "true", "--no-step-log"]
+        self.argslist = [sumoBinary, "-c", module_path + "/assets/ec.sumocfg",
+                         "--collision.action", "remove",
+                         "--step-length", str(self.SUMOSTEP), "-S", "--time-to-teleport", "-1",
+                         "--collision.mingap-factor", "0",
+                         "--collision.check-junctions", "true", "--no-step-log"]
 
         if self.Play:
-            #self.argslist.append("--game")
+            # self.argslist.append("--game")
             self.argslist.append("--window-size")
             self.argslist.append("1000,1000")
 
@@ -119,11 +130,11 @@ class GharrafaBasicEnv(gym.Env):
         #     self.arglist.append("--gui-settings-file")
         #     self.arglist.append(module_path+"/assets/viewsettings.xml")
 
-        traci.start(self.argslist,label=self.runcode)
+        traci.start(self.argslist, label=self.runcode)
 
         self.conn = traci.getConnection(self.runcode)
 
-        time.sleep(5) # Wait for server to startup
+        time.sleep(5)  # Wait for server to startup
 
     def __del__(self):
         self.conn.close()
@@ -131,34 +142,34 @@ class GharrafaBasicEnv(gym.Env):
     def closeconn(self):
         self.conn.close()
 
-    def _selectPhase(self,target):
+    def _selectPhase(self, target):
         target = self.PHASES[target]
         current_program = self.conn.trafficlight.getProgram(self.tlsID)
         if " to " in current_program:
             source = current_program.split(" to ")[1]
         else:
-            #we are in another program like scat or 0... just change from N
+            # we are in another program like scat or 0... just change from N
             source = "G N"
             if source == target:
                 source = "G S"
         if source == target and " to " in current_program:
-            #ensure that the phase will not be changed automatically by the
-            #program, by adding some time
+            # ensure that the phase will not be changed automatically by the
+            # program, by adding some time
             self.conn.trafficlight.setPhase(self.tlsID, 1)
-            self.conn.trafficlight.setPhaseDuration(self.tlsID,60.0)
+            self.conn.trafficlight.setPhaseDuration(self.tlsID, 60.0)
             return False
         else:
-            transition_program = "from %s to %s" % (source,target)
+            transition_program = "from %s to %s" % (source, target)
             self.conn.trafficlight.setProgram(self.tlsID, transition_program)
             self.conn.trafficlight.setPhase(self.tlsID, 0)
             return True
 
     def _observeState(self):
-        #selftimestep = self.conn.simulation.getCurrentTime()/1000
-        lastVehiclesVector = np.zeros(len(self.DETECTORS),dtype=np.float32)
+        # selftimestep = self.conn.simulation.getCurrentTime()/1000
+        lastVehiclesVector = np.zeros(len(self.DETECTORS), dtype=np.float32)
         reward = 0
 
-        #initialize accumulators for Play mode measures
+        # initialize accumulators for Play mode measures
         ACCgetWaitingTime = 0
         ACCgetTravelTime = 0
 
@@ -173,110 +184,122 @@ class GharrafaBasicEnv(gym.Env):
 
         ACCgetArrivedNumber = 0
         ACCgetDepartedNumber = 0
-        #ACCgetCollidingVehiclesNumber = 0
+        # ACCgetCollidingVehiclesNumber = 0
 
         measures = {}
 
-
-        for i in range(int(self.OBSERVEDPERIOD/self.SUMOSTEP)):
+        for i in range(int(self.OBSERVEDPERIOD / self.SUMOSTEP)):
             self.conn.simulationStep()
-            self.timestep += self.SUMOSTEP #self.conn.simulation.getCurrentTime()/1000
-            lastVehiclesVector += np.array([np.float32(self.conn.inductionloop.getLastStepVehicleNumber(detID)) for detID in self.DETECTORS])
-            reward += np.sum([self.conn.inductionloop.getLastStepVehicleNumber(detID) for detID in self.DETECTORS if "out_for" in detID])
+            self.timestep += self.SUMOSTEP  # self.conn.simulation.getCurrentTime()/1000
+            lastVehiclesVector += np.array(
+                [np.float32(self.conn.inductionloop.getLastStepVehicleNumber(detID)) for detID in self.DETECTORS])
+            reward += np.sum([self.conn.inductionloop.getLastStepVehicleNumber(detID) for detID in self.DETECTORS if
+                              "out_for" in detID])
             if self.Play != None:
-                #measure delay,emissions etc. from selected edges
-                ACCgetWaitingTime += np.mean([self.conn.edge.getWaitingTime(edgeID) for edgeID in self.monitored_edges])  #must average over micro steps
-                ACCgetTravelTime += np.mean([self.conn.edge.getTraveltime(edgeID) for edgeID in self.monitored_edges])  #must average over micro steps
+                # measure delay,emissions etc. from selected edges
+                ACCgetWaitingTime += np.mean([self.conn.edge.getWaitingTime(edgeID) for edgeID in
+                                              self.monitored_edges])  # must average over micro steps
+                ACCgetTravelTime += np.mean([self.conn.edge.getTraveltime(edgeID) for edgeID in
+                                             self.monitored_edges])  # must average over micro steps
 
-                ACCgetLastStepOccupancy += np.mean([self.conn.edge.getLastStepOccupancy(edgeID) for edgeID in self.monitored_edges])  # must average over micro steps
-                ACCgetLastStepMeanSpeed += np.mean([self.conn.edge.getLastStepMeanSpeed(edgeID) for edgeID in self.monitored_edges])  # must average over micro steps
-                ACCgetLastStepHaltingNumber += np.mean([self.conn.edge.getLastStepHaltingNumber(edgeID) for edgeID in self.monitored_edges])  # must average over micro steps
+                ACCgetLastStepOccupancy += np.mean([self.conn.edge.getLastStepOccupancy(edgeID) for edgeID in
+                                                    self.monitored_edges])  # must average over micro steps
+                ACCgetLastStepMeanSpeed += np.mean([self.conn.edge.getLastStepMeanSpeed(edgeID) for edgeID in
+                                                    self.monitored_edges])  # must average over micro steps
+                ACCgetLastStepHaltingNumber += np.mean([self.conn.edge.getLastStepHaltingNumber(edgeID) for edgeID in
+                                                        self.monitored_edges])  # must average over micro steps
 
-                ACCgetCO2Emission += np.sum([self.conn.edge.getCO2Emission(edgeID) for edgeID in self.monitored_edges])  # must sum over micro steps
-                ACCgetNOxEmission += np.sum([self.conn.edge.getNOxEmission(edgeID) for edgeID in self.monitored_edges])  # must sum over micro steps
-                ACCgetHCEmission += np.sum([self.conn.edge.getHCEmission(edgeID) for edgeID in self.monitored_edges])  # must sum over micro steps
-                ACCgetNoiseEmission += np.sum([self.conn.edge.getNoiseEmission(edgeID) for edgeID in self.monitored_edges])  # must sum over micro steps
+                ACCgetCO2Emission += np.sum([self.conn.edge.getCO2Emission(edgeID) for edgeID in
+                                             self.monitored_edges])  # must sum over micro steps
+                ACCgetNOxEmission += np.sum([self.conn.edge.getNOxEmission(edgeID) for edgeID in
+                                             self.monitored_edges])  # must sum over micro steps
+                ACCgetHCEmission += np.sum([self.conn.edge.getHCEmission(edgeID) for edgeID in
+                                            self.monitored_edges])  # must sum over micro steps
+                ACCgetNoiseEmission += np.sum([self.conn.edge.getNoiseEmission(edgeID) for edgeID in
+                                               self.monitored_edges])  # must sum over micro steps
 
                 ACCgetArrivedNumber += self.conn.simulation.getArrivedNumber()  # must sum over micro steps
                 ACCgetDepartedNumber += self.conn.simulation.getDepartedNumber()  # must sum over micro steps
-                #ACCgetCollidingVehiclesNumber += self.conn.simulation.getCollidingVehiclesNumber()  # must sum over micro steps
+                # ACCgetCollidingVehiclesNumber += self.conn.simulation.getCollidingVehiclesNumber()  # must sum over micro steps
 
         measures = {
-        "WaitingTime" : ACCgetWaitingTime/(i+1),
-        "TravelTime" : ACCgetTravelTime/(i+1),
+            "WaitingTime": ACCgetWaitingTime / (i + 1),
+            "TravelTime": ACCgetTravelTime / (i + 1),
 
-        "Occupancy" : ACCgetLastStepOccupancy/(i+1),
-        "MeanSpeed" : ACCgetLastStepMeanSpeed/(i+1),
-        "HaltingNumber" : ACCgetLastStepHaltingNumber/(i+1),
+            "Occupancy": ACCgetLastStepOccupancy / (i + 1),
+            "MeanSpeed": ACCgetLastStepMeanSpeed / (i + 1),
+            "HaltingNumber": ACCgetLastStepHaltingNumber / (i + 1),
 
-        "CO2Emission" : ACCgetCO2Emission,
-        "NOxEmission" : ACCgetNOxEmission,
-        "HCEmission" : ACCgetHCEmission,
-        "NoiseEmission" : ACCgetNoiseEmission,
+            "CO2Emission": ACCgetCO2Emission,
+            "NOxEmission": ACCgetNOxEmission,
+            "HCEmission": ACCgetHCEmission,
+            "NoiseEmission": ACCgetNoiseEmission,
 
-        "ArrivedNumber" : ACCgetArrivedNumber,
-        "DepartedNumber" : ACCgetDepartedNumber,
+            "ArrivedNumber": ACCgetArrivedNumber,
+            "DepartedNumber": ACCgetDepartedNumber,
 
-        "Reward" : reward#,
-        #"CollidingVehiclesNumber" : ACCgetCollidingVehiclesNumber
+            "Reward": reward  # ,
+            # "CollidingVehiclesNumber" : ACCgetCollidingVehiclesNumber
         }
 
         obs = lastVehiclesVector
 
-        #TODO: build observation
-        return obs,float(reward),measures
+        # TODO: build observation
+        return obs, float(reward), measures
 
     def step(self, action):
         if self.Play != None and self.Play != "action":
-            obs,reward,measures = self._observeState()
+            obs, reward, measures = self._observeState()
             measures["time"] = self.timestep
 
-            #episodic conditions
-            c1 = self.conn.lane.getLastStepHaltingNumber("7594_2")>10
-            c2 = self.conn.lane.getLastStepHaltingNumber("6511_1")>10
-            c3 = self.conn.lane.getLastStepHaltingNumber("7673_0")>10
+            # episodic conditions
+            c1 = self.conn.lane.getLastStepHaltingNumber("25931028#5") > 10
+            c2 = self.conn.lane.getLastStepHaltingNumber("1040882902#0") > 10
+            c3 = self.conn.lane.getLastStepHaltingNumber("479797339") > 10
 
             return obs, reward, (c1 or c2 or c3), measures
 
-        episode_over=False
+        episode_over = False
         self._selectPhase(action)
 
-        #get state and reward
-        obs,reward,measures = self._observeState()
+        # get state and reward
+        obs, reward, measures = self._observeState()
 
-        #episodic conditions
-        c1 = self.conn.lane.getLastStepHaltingNumber("7594_2")>10
-        c2 = self.conn.lane.getLastStepHaltingNumber("6511_1")>10
-        c3 = self.conn.lane.getLastStepHaltingNumber("7673_0")>10
+        # episodic conditions
+        c1 = self.conn.lane.getLastStepHaltingNumber("25931028#5") > 10
+        c2 = self.conn.lane.getLastStepHaltingNumber("1040882902#0") > 10
+        c3 = self.conn.lane.getLastStepHaltingNumber("479797339") > 10
         measures["time"] = self.timestep
-        #additional = {"time":self.timestep}
-        #detect "game over" state
+        # additional = {"time":self.timestep}
+        # detect "game over" state
         if self.Play != "action" and (self.timestep >= 3600 or c1 or c2 or c3):
-        #if self.timestep >= 3600 or c1 or c2 or c3:
+            # if self.timestep >= 3600 or c1 or c2 or c3:
             episode_over = True
             self.timestep = 0
             time.sleep(1.0)
             self.conn.load(self.argslist[1:])
             time.sleep(1.0)
-            #copyfile("/home/srizzo/tls_switch_states.xml","/home/srizzo/phase_recording/%s_tls_switch_states_%d.xml" % (self.runcode,self.timestep))
-            #self.conn.gui.screenshot(viewID='View #0',filename="/home/srizzo/phase_recording/%s_last_screen.png" % self.runcode)
+            # copyfile("/home/srizzo/tls_switch_states.xml","/home/srizzo/phase_recording/%s_tls_switch_states_%d.xml" % (self.runcode,self.timestep))
+            # self.conn.gui.screenshot(viewID='View #0',filename="/home/srizzo/phase_recording/%s_last_screen.png" % self.runcode)
 
         if self.Play == "action" and self.GUI:
-            self.conn.gui.screenshot(viewID='View #0',filename="/home/srizzo/phase_recording/%s_last_screen.png" % self.runcode)
+            self.conn.gui.screenshot(viewID='View #0',
+                                     filename="./assets/phase_recording/%s_last_screen.png" % self.runcode)
 
         if self.Play == "action" and (self.timestep >= 3600 or c1 or c2 or c3):
             episode_over = True
-            copyfile("/home/srizzo/tls_switch_states.xml","/home/srizzo/phase_recording/%s_tls_switch_states_%d.xml" % (self.runcode,self.timestep))
-
+            copyfile("./assets/tls_switch_states.xml",
+                     './assets/phase_recording/%s_tls_switch_states_%d.xml' % (self.runcode, self.timestep))
 
         return obs, reward, episode_over, measures
 
     def reset(self):
         self.timestep = 0
-        #go back to the first step of the return
+        # go back to the first step of the return
         if self.Play != None and self.Play != "action":
             self.conn.trafficlight.setProgram(self.tlsID, self.Play)
         if self.Play == "action" and self.GUI:
-            self.conn.gui.screenshot(viewID='View #0',filename="/home/srizzo/phase_recording/%s_last_screen.png" % self.runcode)
+            self.conn.gui.screenshot(viewID='View #0',
+                                     filename="./assets/phase_recording/%s_last_screen.png" % self.runcode)
 
         return self._observeState()[0]

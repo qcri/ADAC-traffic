@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-06-12 16:02:48 by Eclipse SUMO GUI Version 1.13.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="./TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/ec.net.xml"/>
+        <route-files value="./TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/MATOD/ec_15.passenger.trips.xml"/>
+        <additional-files value="./TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/TAZ/ec_taz.xml,./TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/e1test.xml"/>
+    </input>
+
+    <time>
+        <begin value="54000"/>
+        <end value="57600"/>
+        <step-length value="0.5"/>
+    </time>
+
+    <processing>
+        <ignore-junction-blocker value="3"/>
+        <collision.action value="remove"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+        <scale value="1"/>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.with-taz value="true"/>
+    </routing>
+
+    <report>
+        <no-warnings value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="50536"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="./TrafQ/Environments/gym-gharrafa/gymGharrafa/assets/gui.settings.xml"/>
+        <start value="true"/>
+        <window-size value="1000,1000"/>
+        <tracker-interval value="0.5-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+</detector>
+lr.de/xsd/det_e1_file.xsd">
+    <interval begin="54000.00" end="54010.00" id="e1_42" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+</detector>

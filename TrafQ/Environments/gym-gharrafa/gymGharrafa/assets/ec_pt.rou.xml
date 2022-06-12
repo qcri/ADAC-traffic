@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated on 2022-05-18 13:11:27.256211 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_13_0+0000-4b5bca80615
+  options: 
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="rail_urban"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_minibus" vClass="bus"/>
+    <vType id="pt_share_taxi" vClass="taxi"/>
+    <vType id="pt_aerialway" vClass="bus"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_tram_Blue_Line:0" color="blue" edges="770742892#5 762108004#1 762107941 684135610#0 684135610#1 762107991#0 762107991#1 762107991#2 762107991#3 762107991#4 762107991#5 208527108 -762107993 -1005819190 762107992 762108000#0 762108000#1 762108000#2 762108000#4 762108000#5 762108000#6 762108000#7 762108000#8 762108000#9 762107990#0 762107990#1 684135607#0 684135607#1 684135607#2 684135607#3 762108005#0 762108005#1" >
+        <stop busStop="6409037859" duration="20" until="66.0"/> <!-- Education City Stadium -East -->
+        <stop busStop="6409038194" duration="20" until="162.0"/> <!-- Qatar Academy - South -->
+        <stop busStop="6409038201" duration="20" until="217.0"/> <!-- NorthNest -->
+        <stop busStop="6409038405" duration="20" until="296.0"/> <!-- Qatar Academy - East -->
+        <stop busStop="6409038272" duration="20" until="360.0"/> <!-- Qatar Academy - North -->
+        <stop busStop="6409037874" duration="20" until="432.0"/> <!-- Academy Green Spine -->
+        <stop busStop="7120440202" duration="20" until="498.0"/> <!-- Education City Stadium - East -->
+    </route>
+    <route id="pt_tram_Yellow_Line:0" color="yellow" edges="762107994#0 -1005819191 -762107995#2 -762107997 762107994#2 762107994#3 762107994#4 762107994#5 684135616#1 775384756#1 775384756#2 775384756#3 775384756#4 775384756#5 775384756#6 775384756#7 775384756#8 1005819190 762108001#0 762108001#1 762108001#2 762108001#3 762108001#4 762108001#5 762263967#0 762263967#1 684135607#0 684135607#1 684135607#2 684135607#3 762108005#0 762108005#1" >
+        <stop busStop="9280145752" duration="20" until="64.0"/> <!-- SouthNest -->
+        <stop busStop="6409038478" duration="20" until="130.0"/> <!-- Oxygen Park -->
+        <stop busStop="9280145749" duration="20" until="194.0"/> <!-- Education City Mosque -->
+        <stop busStop="9280145747" duration="20" until="240.0"/> <!-- Al Khater House -->
+        <stop busStop="9280145745" duration="20" until="271.0"/> <!-- Multaqa -->
+        <stop busStop="9280145743" duration="20" until="387.0"/> <!-- 2015 -->
+        <stop busStop="9280145763" duration="20" until="447.0"/> <!-- Ceremonial Gate -->
+        <stop busStop="9280145761" duration="20" until="520.0"/> <!-- NorthNest -->
+        <stop busStop="9280145741" duration="20" until="575.0"/> <!-- Qatar Academy - South -->
+        <stop busStop="7120440202" duration="20" until="657.0"/> <!-- Education City Stadium - East -->
+    </route>
+    <route id="pt_tram_Yellow_Line:1" color="yellow" edges="770742892#5 762108004#1 762107941 684135610#0 684135610#1 762107991#0 762107991#1 762107991#2 762107991#3 762107991#4 762107991#5 208527108 762107999#0 762107999#1 762107999#2 762107999#3 762107999#4 762107999#5 762107999#6 762107999#7 762107999#8 624520076#1 624520076#2 762107995#1 762107995#2 762107995#3" >
+        <stop busStop="6409037859" duration="20" until="66.0"/> <!-- Education City Stadium -East -->
+        <stop busStop="6409038194" duration="20" until="166.0"/> <!-- Qatar Academy - South -->
+        <stop busStop="6409038201" duration="20" until="221.0"/> <!-- NorthNest -->
+        <stop busStop="6409038223" duration="20" until="294.0"/> <!-- Ceremonial Gate -->
+        <stop busStop="6409038254" duration="20" until="362.0"/> <!-- 2015 -->
+        <stop busStop="6409038432" duration="20" until="450.0"/> <!-- Multaqa -->
+        <stop busStop="6409038441" duration="20" until="504.0"/> <!-- Al Khater House -->
+        <stop busStop="6409038451" duration="20" until="565.0"/> <!-- Education City Mosque -->
+        <stop busStop="6409038477" duration="20" until="629.0"/> <!-- Oxygen Park -->
+        <stop busStop="5897499227" duration="20" until="678.0"/> <!-- SouthNest -->
+    </route>
+    <route id="pt_subway_Green:0" color="0,149,48" edges="755072662" >
+        <stop busStop="7053545656" duration="20" until="31.0"/> <!-- المنصورة -->
+        <stop busStop="7053545646" duration="20" until="140.0"/> <!-- مشيرب -->
+        <stop busStop="7053545636" duration="20" until="228.0"/> <!-- البدع -->
+        <stop busStop="7053545621" duration="20" until="338.0"/> <!-- القصر الأبيض -->
+        <stop busStop="7053545615" duration="20" until="407.0"/> <!-- مستشفى حمد -->
+        <stop busStop="7053545600" duration="20" until="518.0"/> <!-- المسيلة -->
+        <stop busStop="7053545592" duration="20" until="656.0"/> <!-- الريان القديم -->
+        <stop busStop="7053545584" duration="20" until="747.0"/> <!-- الشقب -->
+        <stop busStop="7053545573" duration="20" until="859.0"/> <!-- مكتبة قطر الوطنية -->
+        <stop busStop="7053545564" duration="20" until="965.0"/> <!-- المدينة التعليمية -->
+    </route>
+    <route id="pt_subway_Green:1" color="0,149,48" edges="755072661 755072661 755072661 755072661 755072661 755072661 755072661 755072661 755072661 755072661" >
+        <stop busStop="7053538456" duration="20" until="552.0"/> <!-- المدينة التعليمية -->
+        <stop busStop="7053538465" duration="20" until="1591.0"/> <!-- مكتبة قطر الوطنية -->
+        <stop busStop="7053538476" duration="20" until="2625.0"/> <!-- الشقب -->
+        <stop busStop="7053538484" duration="20" until="3679.0"/> <!-- الريان القديم -->
+        <stop busStop="7053545492" duration="20" until="4686.0"/> <!-- المسيلة -->
+        <stop busStop="7053545507" duration="20" until="5720.0"/> <!-- مستشفى حمد -->
+        <stop busStop="7053545513" duration="20" until="6796.0"/> <!-- القصر الأبيض -->
+        <stop busStop="7053545528" duration="20" until="7832.0"/> <!-- البدع -->
+        <stop busStop="7053545538" duration="20" until="8889.0"/> <!-- مشيرب -->
+        <stop busStop="7053545548" duration="20" until="9922.0"/> <!-- المنصورة -->
+    </route>
+    <flow id="pt_tram_Blue_Line:0" type="pt_tram" route="pt_tram_Blue_Line:0" begin="165.0" end="3765.0" period="600" line="Blue_Line:0" >
+        <param key="name" value="Education City Tram (Blue Line)"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_tram_Yellow_Line:0" type="pt_tram" route="pt_tram_Yellow_Line:0" begin="383.0" end="3983.0" period="600" line="Yellow_Line:0" >
+        <param key="name" value="Education City Tram (Yellow Line)"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_tram_Yellow_Line:1" type="pt_tram" route="pt_tram_Yellow_Line:1" begin="441.0" end="4041.0" period="600" line="Yellow_Line:1" >
+        <param key="name" value="Education City Tram (Yellow Line)"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_subway_Green:0" type="pt_subway" route="pt_subway_Green:0" begin="15.0" end="3615.0" period="600" line="Green:0" >
+        <param key="name" value="الخط الأحمر للمترو: المنصورة ← الرفاع"/>
+        <param key="completeness" value="0.91"/>
+    </flow>
+    <flow id="pt_subway_Green:1" type="pt_subway" route="pt_subway_Green:1" begin="133.0" end="3733.0" period="600" line="Green:1" >
+        <param key="name" value="الخط الأحمر للمترو: الرفاع ← المنصورة"/>
+        <param key="completeness" value="0.91"/>
+    </flow>
+</routes>

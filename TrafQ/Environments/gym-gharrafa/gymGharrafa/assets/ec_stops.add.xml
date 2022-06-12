@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-05-18 13:11:24 by Eclipse SUMO netconvert Version 1.13.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvert.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvertUrbanDe.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvertPedestrians.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvertBicycle.typ.xml"/>
+        <ec-files value="ec_bbox.ec.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="ec.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="ec_stops.add.xml"/>
+        <ptline-output value="ec_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <pedestrian>
+        <crossings.guess value="true"/>
+    </pedestrian>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+    </railway>
+
+    <formats>
+        <ec.bike-access value="true"/>
+        <ec.sidewalks value="true"/>
+    </formats>
+
+    <report>
+        <verbose value="true"/>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-5897499227" name="SouthNest" lane="-762107995#0_0" startPos="53.24" endPos="78.24" friendlyPos="true">
+        <access lane="-1039440409_0" pos="0.00" length="57.67" friendlyPos="1"/>
+        <access lane="-1039441284_0" pos="0.00" length="157.38" friendlyPos="1"/>
+        <access lane="-684135635#0_0" pos="125.35" length="31.16" friendlyPos="1"/>
+        <access lane="1039440409_0" pos="204.06" length="54.55" friendlyPos="1"/>
+        <access lane="684135635#0_0" pos="40.20" length="35.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409037833" name="Education City Stadium - North" lane="-762108004#0_0" startPos="83.35" endPos="108.35" friendlyPos="true">
+        <access lane="-885883449#0_0" pos="0.00" length="35.15" friendlyPos="1"/>
+        <access lane="-885883449#1_0" pos="61.64" length="12.80" friendlyPos="1"/>
+        <access lane="885883443#0_0" pos="0.00" length="34.00" friendlyPos="1"/>
+        <access lane="885883449#0_0" pos="85.21" length="33.70" friendlyPos="1"/>
+        <access lane="885883449#1_0" pos="16.82" length="8.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409037838" name="Education City Stadium - North" lane="762108005#1_0" startPos="83.98" endPos="108.98" friendlyPos="true">
+        <access lane="-885883449#0_0" pos="0.00" length="62.84" friendlyPos="1"/>
+        <access lane="-885883449#1_0" pos="61.86" length="53.85" friendlyPos="1"/>
+        <access lane="659807190#0_0" pos="170.25" length="16.85" friendlyPos="1"/>
+        <access lane="885883449#0_0" pos="85.21" length="58.78" friendlyPos="1"/>
+        <access lane="885883449#1_0" pos="16.60" length="49.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409037859" name="Education City Stadium -East" lane="-762107989_0" startPos="28.62" endPos="53.62" friendlyPos="true">
+        <access lane="1038395174_0" pos="2.22" length="81.41" friendlyPos="1"/>
+        <access lane="1038395183#0_0" pos="0.00" length="83.30" friendlyPos="1"/>
+        <access lane="885883443#3_0" pos="77.26" length="72.34" friendlyPos="1"/>
+        <access lane="885883444#0_0" pos="0.00" length="73.21" friendlyPos="1"/>
+        <access lane="885883447_0" pos="31.48" length="50.64" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409037874" name="Academy Green Spine" lane="-762108000#6_0" startPos="8.00" endPos="33.00" friendlyPos="true">
+        <access lane="1038801178_0" pos="0.00" length="35.21" friendlyPos="1"/>
+        <access lane="1038801179#0_0" pos="8.90" length="34.77" friendlyPos="1"/>
+        <access lane="1038801179#1_0" pos="0.00" length="34.79" friendlyPos="1"/>
+        <access lane="1038801183#1_0" pos="2.83" length="34.68" friendlyPos="1"/>
+        <access lane="1038801183#2_0" pos="10.94" length="25.12" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409038194" name="Qatar Academy - South" lane="-762107991#1_0" startPos="102.20" endPos="127.20" friendlyPos="true">
+        <access lane="-216047552#4_0" pos="0.00" length="65.67" friendlyPos="1"/>
+        <access lane="216047552#4_0" pos="154.14" length="68.92" friendlyPos="1"/>
+        <access lane="216048791_0" pos="39.62" length="110.18" friendlyPos="1"/>
+        <access lane="216048792#1_0" pos="34.69" length="116.73" friendlyPos="1"/>
+        <access lane="755285218#1_0" pos="72.51" length="105.38" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409038201" name="NorthNest" lane="-762107991#3_0" startPos="38.74" endPos="63.74" friendlyPos="true">
+        <access lane="-684135614#1_0" pos="42.99" length="71.93" friendlyPos="1"/>
+        <access lane="-755285216#0_0" pos="18.66" length="33.48" friendlyPos="1"/>
+        <access lane="-755285219_0" pos="0.00" length="70.00" friendlyPos="1"/>
+        <access lane="755285216#0_0" pos="0.00" length="31.55" friendlyPos="1"/>
+        <access lane="755285219_0" pos="22.18" length="65.48" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409038272" name="Qatar Academy - North" lane="-762108000#5_0" startPos="155.04" endPos="180.04" friendlyPos="true">
+        <access lane="-166533033#2_0" pos="50.46" length="22.96" friendlyPos="1"/>
+        <access lane="-684135624_0" pos="156.36" length="18.08" friendlyPos="1"/>
+        <access lane="166533033#1_0" pos="66.06" length="28.27" friendlyPos="1"/>
+        <access lane="166533033#2_0" pos="5.04" length="18.16" friendlyPos="1"/>
+        <access lane="684135624_0" pos="166.75" length="22.88" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409038405" name="Qatar Academy - East" lane="-762108000#2_0" startPos="49.55" endPos="74.55" friendlyPos="true">
+        <access lane="-159455891#0_0" pos="3.90" length="54.71" friendlyPos="1"/>
+        <access lane="-658100063#0_0" pos="0.00" length="49.92" friendlyPos="1"/>
+        <access lane="-658100063#1_0" pos="6.31" length="49.95" friendlyPos="1"/>
+        <access lane="159455891#1_0" pos="0.00" length="53.37" friendlyPos="1"/>
+        <access lane="658100063#1_0" pos="0.00" length="54.73" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409038477" name="Oxygen Park" lane="-624520076#1_0" startPos="31.07" endPos="56.07" friendlyPos="true">
+        <access lane="-208527107_0" pos="0.00" length="233.09" friendlyPos="1"/>
+        <access lane="-900140270_0" pos="0.00" length="177.55" friendlyPos="1"/>
+        <access lane="208527107_0" pos="106.05" length="234.38" friendlyPos="1"/>
+        <access lane="900140270_0" pos="49.52" length="179.06" friendlyPos="1"/>
+        <access lane="900140271#1_0" pos="14.16" length="248.78" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409038478" name="Oxygen Park" lane="-762107994#4_0" startPos="29.70" endPos="54.70" friendlyPos="true">
+        <access lane="-900140270_0" pos="0.00" length="140.85" friendlyPos="1"/>
+        <access lane="900140270_0" pos="49.52" length="142.77" friendlyPos="1"/>
+        <access lane="900140271#0_0" pos="7.18" length="212.57" friendlyPos="1"/>
+        <access lane="900140271#1_0" pos="15.12" length="209.37" friendlyPos="1"/>
+        <access lane="900140271#2_0" pos="0.00" length="209.95" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409038603" name="Al Shaqab" lane="-762107995#3_0" startPos="42.03" endPos="67.03" friendlyPos="true">
+        <access lane="-854052889_0" pos="155.43" length="79.52" friendlyPos="1"/>
+        <access lane="-854052894#1_0" pos="30.20" length="103.74" friendlyPos="1"/>
+        <access lane="684496714_0" pos="0.00" length="43.61" friendlyPos="1"/>
+        <access lane="854052889_0" pos="907.57" length="74.72" friendlyPos="1"/>
+        <access lane="854052894#1_0" pos="120.47" length="108.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-6409320614" name="متحف" lane="-770742892#0_0" startPos="40.12" endPos="65.12" friendlyPos="true">
+        <access lane="-1032950226#0_0" pos="3.97" length="52.89" friendlyPos="1"/>
+        <access lane="-216064941#0_0" pos="89.14" length="42.60" friendlyPos="1"/>
+        <access lane="1032950226#0_0" pos="78.34" length="48.09" friendlyPos="1"/>
+        <access lane="1032950226#1_0" pos="0.00" length="51.96" friendlyPos="1"/>
+        <access lane="216064941#0_0" pos="0.00" length="46.71" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7120440202" name="Education City Stadium - East" lane="-684135607#2_0" startPos="253.52" endPos="278.52" friendlyPos="true">
+        <access lane="1038395174_0" pos="2.22" length="82.32" friendlyPos="1"/>
+        <access lane="1038395192#1_0" pos="3.82" length="82.72" friendlyPos="1"/>
+        <access lane="885883443#3_0" pos="77.26" length="75.32" friendlyPos="1"/>
+        <access lane="885883444#0_0" pos="0.00" length="76.22" friendlyPos="1"/>
+        <access lane="885883447_0" pos="31.75" length="54.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145738" name="متحف" lane="-770742891#0_0" startPos="48.74" endPos="73.74" friendlyPos="true">
+        <access lane="-1032950226#0_0" pos="3.70" length="49.25" friendlyPos="1"/>
+        <access lane="-216064941#0_0" pos="89.14" length="45.02" friendlyPos="1"/>
+        <access lane="1032950226#0_0" pos="78.61" length="44.45" friendlyPos="1"/>
+        <access lane="1032950226#1_0" pos="0.00" length="48.45" friendlyPos="1"/>
+        <access lane="216064941#0_0" pos="0.00" length="48.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145741" name="Qatar Academy - South" lane="-762108001#5_0" startPos="178.65" endPos="203.65" friendlyPos="true">
+        <access lane="-216047552#4_0" pos="0.00" length="68.70" friendlyPos="1"/>
+        <access lane="216047552#4_0" pos="154.14" length="71.82" friendlyPos="1"/>
+        <access lane="216048791_0" pos="40.05" length="106.57" friendlyPos="1"/>
+        <access lane="216048792#1_0" pos="34.69" length="115.52" friendlyPos="1"/>
+        <access lane="755285218#1_0" pos="71.42" length="101.77" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145743" name="2015" lane="-775384756#6_0" startPos="121.29" endPos="146.29" friendlyPos="true">
+        <access lane="-159453462_0" pos="57.51" length="48.64" friendlyPos="1"/>
+        <access lane="-684135622#0_0" pos="42.56" length="43.84" friendlyPos="1"/>
+        <access lane="1030895334_0" pos="16.39" length="58.91" friendlyPos="1"/>
+        <access lane="1038390123#1_0" pos="37.35" length="23.40" friendlyPos="1"/>
+        <access lane="1039442039_0" pos="102.50" length="57.07" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145745" name="Multaqa" lane="-775384756#0_0" startPos="95.61" endPos="120.61" friendlyPos="true">
+        <access lane="-775380334#1_0" pos="19.75" length="80.48" friendlyPos="1"/>
+        <access lane="-775380334#3_0" pos="14.80" length="71.38" friendlyPos="1"/>
+        <access lane="1058755919_0" pos="111.52" length="19.64" friendlyPos="1"/>
+        <access lane="775380334#1_0" pos="21.99" length="75.65" friendlyPos="1"/>
+        <access lane="775380334#3_0" pos="53.37" length="76.53" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145747" name="Al Khater House" lane="-775384756#0_0" startPos="310.56" endPos="335.56" friendlyPos="true">
+        <access lane="-775380340#2_0" pos="40.42" length="117.64" friendlyPos="1"/>
+        <access lane="770708083_0" pos="128.39" length="28.50" friendlyPos="1"/>
+        <access lane="775380340#2_0" pos="102.69" length="112.84" friendlyPos="1"/>
+        <access lane="775380342_0" pos="113.59" length="45.70" friendlyPos="1"/>
+        <access lane="775380350#1_0" pos="0.00" length="122.91" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145749" name="Education City Mosque" lane="-775384756#0_0" startPos="620.41" endPos="645.41" friendlyPos="true">
+        <access lane="1038390120_0" pos="0.37" length="40.30" friendlyPos="1"/>
+        <access lane="1038390121#0_0" pos="59.36" length="44.33" friendlyPos="1"/>
+        <access lane="1038390121#1_0" pos="3.56" length="39.61" friendlyPos="1"/>
+        <access lane="1038390122#2_0" pos="21.83" length="48.24" friendlyPos="1"/>
+        <access lane="1038390122#3_0" pos="2.23" length="45.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145752" name="SouthNest" lane="-762107994#3_0" startPos="326.54" endPos="351.54" friendlyPos="true">
+        <access lane="-1039440409_0" pos="0.00" length="61.06" friendlyPos="1"/>
+        <access lane="-1039441284_0" pos="0.00" length="159.02" friendlyPos="1"/>
+        <access lane="-684135635#0_0" pos="125.52" length="26.34" friendlyPos="1"/>
+        <access lane="1039440409_0" pos="204.06" length="58.15" friendlyPos="1"/>
+        <access lane="684135635#0_0" pos="40.03" length="31.14" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145759" name="Al Shaqab" lane="-762107994#0_0" startPos="48.85" endPos="73.85" friendlyPos="true">
+        <access lane="-854052889_0" pos="154.23" length="40.23" friendlyPos="1"/>
+        <access lane="-854052894#1_0" pos="5.45" length="116.72" friendlyPos="1"/>
+        <access lane="1040925853_0" pos="0.00" length="115.03" friendlyPos="1"/>
+        <access lane="684496714_0" pos="0.00" length="6.13" friendlyPos="1"/>
+        <access lane="854052889_0" pos="908.77" length="35.43" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145761" name="NorthNest" lane="-762108001#3_0" startPos="83.44" endPos="108.44" friendlyPos="true">
+        <access lane="-755285216#0_0" pos="18.66" length="29.58" friendlyPos="1"/>
+        <access lane="-755285219_0" pos="0.00" length="65.42" friendlyPos="1"/>
+        <access lane="755285216#0_0" pos="0.00" length="27.22" friendlyPos="1"/>
+        <access lane="755285216#1_0" pos="0.00" length="67.27" friendlyPos="1"/>
+        <access lane="755285219_0" pos="22.18" length="60.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-9280145763" name="Ceremonial Gate" lane="-775384756#7_0" startPos="32.10" endPos="57.10" friendlyPos="true">
+        <access lane="1005819183#1_0" pos="11.38" length="61.05" friendlyPos="1"/>
+        <access lane="1005819188_0" pos="47.28" length="80.26" friendlyPos="1"/>
+        <access lane="1039131563_0" pos="129.22" length="41.50" friendlyPos="1"/>
+        <access lane="159457857#0_0" pos="246.56" length="56.99" friendlyPos="1"/>
+        <access lane="159457857#1_0" pos="14.16" length="43.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5897499227" name="SouthNest" lane="624520076#2_0" startPos="87.41" endPos="112.41" friendlyPos="true" lines="Yellow Line">
+        <access lane="-1039440409_0" pos="0.00" length="57.67" friendlyPos="1"/>
+        <access lane="-1039441284_0" pos="0.00" length="157.38" friendlyPos="1"/>
+        <access lane="-684135635#0_0" pos="125.35" length="31.16" friendlyPos="1"/>
+        <access lane="1039440409_0" pos="204.06" length="54.55" friendlyPos="1"/>
+        <access lane="684135635#0_0" pos="40.20" length="35.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409037833" name="Education City Stadium - North" lane="770742892#5_0" startPos="47.77" endPos="72.77" friendlyPos="true">
+        <access lane="-885883449#0_0" pos="0.00" length="35.15" friendlyPos="1"/>
+        <access lane="-885883449#1_0" pos="61.64" length="12.80" friendlyPos="1"/>
+        <access lane="885883443#0_0" pos="0.00" length="34.00" friendlyPos="1"/>
+        <access lane="885883449#0_0" pos="85.21" length="33.70" friendlyPos="1"/>
+        <access lane="885883449#1_0" pos="16.82" length="8.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409037838" name="Education City Stadium - North" lane="770742882#2_0" startPos="48.50" endPos="73.50" friendlyPos="true">
+        <access lane="-885883449#0_0" pos="0.00" length="62.84" friendlyPos="1"/>
+        <access lane="-885883449#1_0" pos="61.86" length="53.85" friendlyPos="1"/>
+        <access lane="659807190#0_0" pos="170.25" length="16.85" friendlyPos="1"/>
+        <access lane="885883449#0_0" pos="85.21" length="58.78" friendlyPos="1"/>
+        <access lane="885883449#1_0" pos="16.60" length="49.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409037859" name="Education City Stadium -East" lane="762107941_0" startPos="62.86" endPos="87.86" friendlyPos="true" lines="Blue Line Yellow Line">
+        <access lane="1038395174_0" pos="2.22" length="81.41" friendlyPos="1"/>
+        <access lane="1038395183#0_0" pos="0.00" length="83.30" friendlyPos="1"/>
+        <access lane="885883443#3_0" pos="77.26" length="72.34" friendlyPos="1"/>
+        <access lane="885883444#0_0" pos="0.00" length="73.21" friendlyPos="1"/>
+        <access lane="885883447_0" pos="31.48" length="50.64" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409037874" name="Academy Green Spine" lane="762108000#6_0" startPos="55.62" endPos="80.62" friendlyPos="true" lines="Blue Line">
+        <access lane="1038801178_0" pos="0.00" length="35.21" friendlyPos="1"/>
+        <access lane="1038801179#0_0" pos="8.90" length="34.77" friendlyPos="1"/>
+        <access lane="1038801179#1_0" pos="0.00" length="34.79" friendlyPos="1"/>
+        <access lane="1038801183#1_0" pos="2.83" length="34.68" friendlyPos="1"/>
+        <access lane="1038801183#2_0" pos="10.94" length="25.12" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038194" name="Qatar Academy - South" lane="762107991#1_0" startPos="170.71" endPos="195.71" friendlyPos="true" lines="Blue Line Yellow Line">
+        <access lane="-216047552#4_0" pos="0.00" length="65.67" friendlyPos="1"/>
+        <access lane="216047552#4_0" pos="154.14" length="68.92" friendlyPos="1"/>
+        <access lane="216048791_0" pos="39.62" length="110.18" friendlyPos="1"/>
+        <access lane="216048792#1_0" pos="34.69" length="116.73" friendlyPos="1"/>
+        <access lane="755285218#1_0" pos="72.51" length="105.38" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038201" name="NorthNest" lane="762107991#3_0" startPos="86.53" endPos="111.53" friendlyPos="true" lines="Blue Line Yellow Line">
+        <access lane="-684135614#1_0" pos="42.99" length="71.93" friendlyPos="1"/>
+        <access lane="-755285216#0_0" pos="18.66" length="33.48" friendlyPos="1"/>
+        <access lane="-755285219_0" pos="0.00" length="70.00" friendlyPos="1"/>
+        <access lane="755285216#0_0" pos="0.00" length="31.55" friendlyPos="1"/>
+        <access lane="755285219_0" pos="22.18" length="65.48" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038223" name="Ceremonial Gate" lane="762107999#0_0" startPos="112.42" endPos="137.42" friendlyPos="true" lines="Yellow Line">
+        <access lane="1005819183#1_0" pos="11.38" length="62.05" friendlyPos="1"/>
+        <access lane="1005819188_0" pos="47.28" length="84.16" friendlyPos="1"/>
+        <access lane="1039131563_0" pos="126.85" length="39.75" friendlyPos="1"/>
+        <access lane="159457857#0_0" pos="245.50" length="53.35" friendlyPos="1"/>
+        <access lane="159457857#1_0" pos="12.10" length="41.23" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038254" name="2015" lane="762107999#1_0" startPos="129.31" endPos="154.31" friendlyPos="true" lines="Yellow Line">
+        <access lane="-159453462_0" pos="57.74" length="43.05" friendlyPos="1"/>
+        <access lane="-684135622#0_0" pos="42.32" length="38.25" friendlyPos="1"/>
+        <access lane="1038390123#1_0" pos="37.15" length="29.00" friendlyPos="1"/>
+        <access lane="1039442039_0" pos="102.50" length="60.52" friendlyPos="1"/>
+        <access lane="159457877#10_0" pos="0.00" length="61.68" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038272" name="Qatar Academy - North" lane="762108000#5_0" startPos="152.69" endPos="177.69" friendlyPos="true" lines="Blue Line">
+        <access lane="-166533033#2_0" pos="50.46" length="22.96" friendlyPos="1"/>
+        <access lane="-684135624_0" pos="156.36" length="18.08" friendlyPos="1"/>
+        <access lane="166533033#1_0" pos="66.06" length="28.27" friendlyPos="1"/>
+        <access lane="166533033#2_0" pos="5.04" length="18.16" friendlyPos="1"/>
+        <access lane="684135624_0" pos="166.75" length="22.88" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038405" name="Qatar Academy - East" lane="762108000#2_0" startPos="22.22" endPos="47.22" friendlyPos="true" lines="Blue Line">
+        <access lane="-159455891#0_0" pos="3.90" length="54.71" friendlyPos="1"/>
+        <access lane="-658100063#0_0" pos="0.00" length="49.92" friendlyPos="1"/>
+        <access lane="-658100063#1_0" pos="6.31" length="49.95" friendlyPos="1"/>
+        <access lane="159455891#1_0" pos="0.00" length="53.37" friendlyPos="1"/>
+        <access lane="658100063#1_0" pos="0.00" length="54.73" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038432" name="Multaqa" lane="762107999#7_0" startPos="103.45" endPos="128.45" friendlyPos="true" lines="Yellow Line">
+        <access lane="-775380334#3_0" pos="14.80" length="74.98" friendlyPos="1"/>
+        <access lane="1058755919_0" pos="111.87" length="13.81" friendlyPos="1"/>
+        <access lane="775380330#2_0" pos="58.63" length="85.87" friendlyPos="1"/>
+        <access lane="775380334#1_0" pos="21.99" length="81.23" friendlyPos="1"/>
+        <access lane="775380334#3_0" pos="53.37" length="80.08" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038441" name="Al Khater House" lane="762107999#7_0" startPos="319.34" endPos="344.34" friendlyPos="true" lines="Yellow Line">
+        <access lane="-775380340#2_0" pos="39.41" length="121.76" friendlyPos="1"/>
+        <access lane="770708083_0" pos="128.56" length="24.12" friendlyPos="1"/>
+        <access lane="775380340#2_0" pos="103.70" length="116.96" friendlyPos="1"/>
+        <access lane="775380342_0" pos="113.59" length="49.83" friendlyPos="1"/>
+        <access lane="775380350#1_0" pos="0.00" length="125.52" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038451" name="Education City Mosque" lane="762107999#7_0" startPos="624.15" endPos="649.15" friendlyPos="true" lines="Yellow Line">
+        <access lane="1038390120_0" pos="2.13" length="36.12" friendlyPos="1"/>
+        <access lane="1038390121#0_0" pos="59.36" length="40.53" friendlyPos="1"/>
+        <access lane="1038390121#1_0" pos="1.01" length="36.49" friendlyPos="1"/>
+        <access lane="1038390122#0_0" pos="0.00" length="46.98" friendlyPos="1"/>
+        <access lane="688557372#1_0" pos="43.70" length="48.49" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038477" name="Oxygen Park" lane="624520076#1_0" startPos="33.49" endPos="58.49" friendlyPos="true" lines="Yellow Line">
+        <access lane="-208527107_0" pos="0.00" length="233.09" friendlyPos="1"/>
+        <access lane="-900140270_0" pos="0.00" length="177.55" friendlyPos="1"/>
+        <access lane="208527107_0" pos="106.05" length="234.38" friendlyPos="1"/>
+        <access lane="900140270_0" pos="49.52" length="179.06" friendlyPos="1"/>
+        <access lane="900140271#1_0" pos="14.16" length="248.78" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038478" name="Oxygen Park" lane="762107994#4_0" startPos="35.06" endPos="60.06" friendlyPos="true" lines="Yellow Line">
+        <access lane="-900140270_0" pos="0.00" length="140.85" friendlyPos="1"/>
+        <access lane="900140270_0" pos="49.52" length="142.77" friendlyPos="1"/>
+        <access lane="900140271#0_0" pos="7.18" length="212.57" friendlyPos="1"/>
+        <access lane="900140271#1_0" pos="15.12" length="209.37" friendlyPos="1"/>
+        <access lane="900140271#2_0" pos="0.00" length="209.95" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409038603" name="Al Shaqab" lane="762107995#3_0" startPos="112.20" endPos="137.20" friendlyPos="true">
+        <access lane="-854052889_0" pos="155.43" length="79.52" friendlyPos="1"/>
+        <access lane="-854052894#1_0" pos="30.20" length="103.74" friendlyPos="1"/>
+        <access lane="684496714_0" pos="0.00" length="43.61" friendlyPos="1"/>
+        <access lane="854052889_0" pos="907.57" length="74.72" friendlyPos="1"/>
+        <access lane="854052894#1_0" pos="120.47" length="108.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6409320614" name="متحف" lane="684135606_0" startPos="34.59" endPos="59.59" friendlyPos="true">
+        <access lane="-1032950226#0_0" pos="3.97" length="52.89" friendlyPos="1"/>
+        <access lane="-216064941#0_0" pos="89.14" length="42.60" friendlyPos="1"/>
+        <access lane="1032950226#0_0" pos="78.34" length="48.09" friendlyPos="1"/>
+        <access lane="1032950226#1_0" pos="0.00" length="51.96" friendlyPos="1"/>
+        <access lane="216064941#0_0" pos="0.00" length="46.71" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7053538456" name="المدينة التعليمية" lane="755072661_0" startPos="13873.54" endPos="14073.54" friendlyPos="true" lines="Green">
+        <access lane="1032708727_0" pos="227.19" length="57.62" friendlyPos="1"/>
+        <access lane="1032708729#4_0" pos="29.77" length="39.78" friendlyPos="1"/>
+        <access lane="684498728#1_0" pos="133.14" length="38.10" friendlyPos="1"/>
+        <access lane="771920467#1_0" pos="0.00" length="36.16" friendlyPos="1"/>
+        <access lane="854030730#1_0" pos="149.70" length="34.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7053538465" name="مكتبة قطر الوطنية" lane="755072661_0" startPos="12253.85" endPos="12453.85" friendlyPos="true" lines="Green">
+        <access lane="-684402144#1_0" pos="31.27" length="55.40" friendlyPos="1"/>
+        <access lane="684402144#1_0" pos="0.00" length="57.42" friendlyPos="1"/>
+        <access lane="775599630#1_0" pos="0.00" length="56.38" friendlyPos="1"/>
+        <access lane="775599632_0" pos="52.98" length="47.72" friendlyPos="1"/>
+        <access lane="854036727_0" pos="196.41" length="51.41" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7053538476" name="الشقب" lane="755072661_0" startPos="10477.17" endPos="10677.17" friendlyPos="true" lines="Green">
+        <access lane="-854052889_0" pos="607.66" length="21.44" friendlyPos="1"/>
+        <access lane="684496714_0" pos="194.88" length="73.45" friendlyPos="1"/>
+        <access lane="854052889_0" pos="445.06" length="16.64" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7053538484" name="الريان القديم" lane="755072661_0" startPos="9268.07" endPos="9468.07" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545492" name="المسيلة" lane="755072661_0" startPos="6763.99" endPos="6963.99" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545507" name="مستشفى حمد" lane="755072661_0" startPos="5012.79" endPos="5212.79" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545513" name="القصر الأبيض" lane="755072661_0" startPos="4420.04" endPos="4620.04" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545528" name="البدع" lane="755072661_0" startPos="2710.29" endPos="2910.29" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545538" name="مشيرب" lane="755072661_0" startPos="1585.36" endPos="1785.36" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545548" name="المنصورة" lane="755072661_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545564" name="المدينة التعليمية" lane="755072662_0" startPos="13879.88" endPos="14079.88" friendlyPos="true" lines="Green">
+        <access lane="1032708727_0" pos="227.05" length="50.16" friendlyPos="1"/>
+        <access lane="1032708729#4_0" pos="29.77" length="47.15" friendlyPos="1"/>
+        <access lane="684498728#1_0" pos="133.14" length="41.32" friendlyPos="1"/>
+        <access lane="771920467#1_0" pos="0.00" length="43.33" friendlyPos="1"/>
+        <access lane="854030730#1_0" pos="149.69" length="41.90" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7053545573" name="مكتبة قطر الوطنية" lane="755072662_0" startPos="12258.32" endPos="12458.32" friendlyPos="true" lines="Green">
+        <access lane="-684402144#1_0" pos="31.27" length="62.34" friendlyPos="1"/>
+        <access lane="684402144#1_0" pos="0.00" length="64.15" friendlyPos="1"/>
+        <access lane="775599630#1_0" pos="0.00" length="62.76" friendlyPos="1"/>
+        <access lane="775599632_0" pos="53.12" length="55.16" friendlyPos="1"/>
+        <access lane="854036727_0" pos="196.32" length="43.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7053545584" name="الشقب" lane="755072662_0" startPos="10476.22" endPos="10676.22" friendlyPos="true" lines="Green">
+        <access lane="-854052889_0" pos="607.68" length="28.93" friendlyPos="1"/>
+        <access lane="684496714_0" pos="199.87" length="73.60" friendlyPos="1"/>
+        <access lane="854052889_0" pos="445.05" length="24.13" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7053545592" name="الريان القديم" lane="755072662_0" startPos="9269.97" endPos="9469.97" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545600" name="المسيلة" lane="755072662_0" startPos="6766.01" endPos="6966.01" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545615" name="مستشفى حمد" lane="755072662_0" startPos="5019.68" endPos="5219.68" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545621" name="القصر الأبيض" lane="755072662_0" startPos="4425.82" endPos="4625.82" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545636" name="البدع" lane="755072662_0" startPos="2707.88" endPos="2907.88" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545646" name="مشيرب" lane="755072662_0" startPos="1586.39" endPos="1786.39" friendlyPos="true" lines="Green"/>
+    <busStop id="7053545656" name="المنصورة" lane="755072662_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="Green"/>
+    <busStop id="7120440202" name="Education City Stadium - East" lane="684135607#2_0" startPos="32.96" endPos="57.96" friendlyPos="true" lines="Blue Line Yellow Line">
+        <access lane="1038395174_0" pos="2.22" length="82.32" friendlyPos="1"/>
+        <access lane="1038395192#1_0" pos="3.82" length="82.72" friendlyPos="1"/>
+        <access lane="885883443#3_0" pos="77.26" length="75.32" friendlyPos="1"/>
+        <access lane="885883444#0_0" pos="0.00" length="76.22" friendlyPos="1"/>
+        <access lane="885883447_0" pos="31.75" length="54.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145738" name="متحف" lane="762107937_0" startPos="34.21" endPos="59.21" friendlyPos="true">
+        <access lane="-1032950226#0_0" pos="3.70" length="49.25" friendlyPos="1"/>
+        <access lane="-216064941#0_0" pos="89.14" length="45.02" friendlyPos="1"/>
+        <access lane="1032950226#0_0" pos="78.61" length="44.45" friendlyPos="1"/>
+        <access lane="1032950226#1_0" pos="0.00" length="48.45" friendlyPos="1"/>
+        <access lane="216064941#0_0" pos="0.00" length="48.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145741" name="Qatar Academy - South" lane="762108001#5_0" startPos="105.29" endPos="130.29" friendlyPos="true" lines="Yellow Line">
+        <access lane="-216047552#4_0" pos="0.00" length="68.70" friendlyPos="1"/>
+        <access lane="216047552#4_0" pos="154.14" length="71.82" friendlyPos="1"/>
+        <access lane="216048791_0" pos="40.05" length="106.57" friendlyPos="1"/>
+        <access lane="216048792#1_0" pos="34.69" length="115.52" friendlyPos="1"/>
+        <access lane="755285218#1_0" pos="71.42" length="101.77" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145743" name="2015" lane="775384756#6_0" startPos="28.82" endPos="53.82" friendlyPos="true" lines="Yellow Line">
+        <access lane="-159453462_0" pos="57.51" length="48.64" friendlyPos="1"/>
+        <access lane="-684135622#0_0" pos="42.56" length="43.84" friendlyPos="1"/>
+        <access lane="1030895334_0" pos="16.39" length="58.91" friendlyPos="1"/>
+        <access lane="1038390123#1_0" pos="37.35" length="23.40" friendlyPos="1"/>
+        <access lane="1039442039_0" pos="102.50" length="57.07" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145745" name="Multaqa" lane="684135616#1_0" startPos="247.17" endPos="272.17" friendlyPos="true" lines="Yellow Line">
+        <access lane="-775380334#1_0" pos="19.75" length="80.48" friendlyPos="1"/>
+        <access lane="-775380334#3_0" pos="14.80" length="71.38" friendlyPos="1"/>
+        <access lane="1058755919_0" pos="111.52" length="19.64" friendlyPos="1"/>
+        <access lane="775380334#1_0" pos="21.99" length="75.65" friendlyPos="1"/>
+        <access lane="775380334#3_0" pos="53.37" length="76.53" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145747" name="Al Khater House" lane="684135616#1_0" startPos="247.17" endPos="272.17" friendlyPos="true" lines="Yellow Line">
+        <access lane="-775380340#2_0" pos="40.42" length="117.64" friendlyPos="1"/>
+        <access lane="770708083_0" pos="128.39" length="28.50" friendlyPos="1"/>
+        <access lane="775380340#2_0" pos="102.69" length="112.84" friendlyPos="1"/>
+        <access lane="775380342_0" pos="113.59" length="45.70" friendlyPos="1"/>
+        <access lane="775380350#1_0" pos="0.00" length="122.91" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145749" name="Education City Mosque" lane="684135616#1_0" startPos="144.79" endPos="169.79" friendlyPos="true" lines="Yellow Line">
+        <access lane="1038390120_0" pos="0.37" length="40.30" friendlyPos="1"/>
+        <access lane="1038390121#0_0" pos="59.36" length="44.33" friendlyPos="1"/>
+        <access lane="1038390121#1_0" pos="3.56" length="39.61" friendlyPos="1"/>
+        <access lane="1038390122#2_0" pos="21.83" length="48.24" friendlyPos="1"/>
+        <access lane="1038390122#3_0" pos="2.23" length="45.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145752" name="SouthNest" lane="762107994#3_0" startPos="72.38" endPos="97.38" friendlyPos="true" lines="Yellow Line">
+        <access lane="-1039440409_0" pos="0.00" length="61.06" friendlyPos="1"/>
+        <access lane="-1039441284_0" pos="0.00" length="159.02" friendlyPos="1"/>
+        <access lane="-684135635#0_0" pos="125.52" length="26.34" friendlyPos="1"/>
+        <access lane="1039440409_0" pos="204.06" length="58.15" friendlyPos="1"/>
+        <access lane="684135635#0_0" pos="40.03" length="31.14" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145759" name="Al Shaqab" lane="762107994#0_0" startPos="44.96" endPos="69.96" friendlyPos="true">
+        <access lane="-854052889_0" pos="154.23" length="40.23" friendlyPos="1"/>
+        <access lane="-854052894#1_0" pos="5.45" length="116.72" friendlyPos="1"/>
+        <access lane="1040925853_0" pos="0.00" length="115.03" friendlyPos="1"/>
+        <access lane="684496714_0" pos="0.00" length="6.13" friendlyPos="1"/>
+        <access lane="854052889_0" pos="908.77" length="35.43" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145761" name="NorthNest" lane="762108001#3_0" startPos="43.26" endPos="68.26" friendlyPos="true" lines="Yellow Line">
+        <access lane="-755285216#0_0" pos="18.66" length="29.58" friendlyPos="1"/>
+        <access lane="-755285219_0" pos="0.00" length="65.42" friendlyPos="1"/>
+        <access lane="755285216#0_0" pos="0.00" length="27.22" friendlyPos="1"/>
+        <access lane="755285216#1_0" pos="0.00" length="67.27" friendlyPos="1"/>
+        <access lane="755285219_0" pos="22.18" length="60.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9280145763" name="Ceremonial Gate" lane="775384756#7_0" startPos="124.83" endPos="149.83" friendlyPos="true" lines="Yellow Line">
+        <access lane="1005819183#1_0" pos="11.38" length="61.05" friendlyPos="1"/>
+        <access lane="1005819188_0" pos="47.28" length="80.26" friendlyPos="1"/>
+        <access lane="1039131563_0" pos="129.22" length="41.50" friendlyPos="1"/>
+        <access lane="159457857#0_0" pos="246.56" length="56.99" friendlyPos="1"/>
+        <access lane="159457857#1_0" pos="14.16" length="43.72" friendlyPos="1"/>
+    </busStop>
+</additional>

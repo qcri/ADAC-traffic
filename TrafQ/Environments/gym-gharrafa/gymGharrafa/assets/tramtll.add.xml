@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-05-18 13:11:24 by Eclipse SUMO netconvert Version 1.13.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvert.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvertUrbanDe.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvertPedestrians.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvertBicycle.typ.xml"/>
+        <ec-files value="ec_bbox.ec.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="ec.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="ec_stops.add.xml"/>
+        <ptline-output value="ec_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <pedestrian>
+        <crossings.guess value="true"/>
+    </pedestrian>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+    </railway>
+
+    <formats>
+        <ec.bike-access value="true"/>
+        <ec.sidewalks value="true"/>
+    </formats>
+
+    <report>
+        <verbose value="true"/>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    
+	<tlLogic id="cluster_6409320608_7120422867_9517033381" programID="0">
+		<param key="time-gap" value="15.0"/>
+		<param key="space-gap" value="-1.0"/>
+		<param key="min-green-time" value="5.0"/>
+		<param key="opening-delay" value="3.0"/>
+		<param key="opening-time" value="3.0"/>
+		<param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<tlLogic id="cluster_6409320599_7120422876" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<tlLogic id="cluster_6409320598_7120422877" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+
+	<tlLogic id="6409037825" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<tlLogic id="cluster_6409037864_7120440121" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<tlLogic id="cluster_9563800870_9563800871" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<!--<tlLogic id="cluster_4728408580_4728408631_6409037865_7122415054" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>-->
+	
+	<tlLogic id="cluster_9563800875_9563800876" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<!--<tlLogic id="cluster_1163488210_6409037878" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>-->
+	
+	<tlLogic id="cluster_6409038200_7120440125" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+		
+	<tlLogic id="cluster_5882938474_7120440126" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<!--<tlLogic id="cluster_6409038282_6409038395" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>-->
+	
+	<tlLogic id="cluster_4728408500_6409038399_6409038400" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<tlLogic id="cluster_6409038207_7120440128" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<tlLogic id="cluster_6409038211_7120440131" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<tlLogic id="cluster_4728408571_7120440134" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<!--<tlLogic id="cluster_1715726717_6409038250_7120440142" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>-->
+	
+	<tlLogic id="7231484558" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+	
+	<tlLogic id="cluster_7231484353_7231484354" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+		
+	<tlLogic id="cluster_6409038424_7120440159" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+		
+	<tlLogic id="cluster_6409038427_7120440162_7233870682" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+		
+	<tlLogic id="cluster_7231484557_7231484559" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+		
+	<tlLogic id="6409038484" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+		
+	<tlLogic id="6409038483" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+
+	<tlLogic id="5897499214" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+
+	<tlLogic id="5897499218" programID="0">
+        <param key="time-gap" value="15.0"/>
+        <param key="space-gap" value="-1.0"/>
+        <param key="min-green-time" value="5.0"/>
+        <param key="opening-delay" value="3.0"/>
+        <param key="opening-time" value="3.0"/>
+        <param key="yellow-time" value="3.0"/>
+    </tlLogic>
+
+
+</additional>

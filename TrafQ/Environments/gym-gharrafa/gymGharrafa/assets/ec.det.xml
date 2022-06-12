@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-05-24 12:42:32 by Eclipse SUMO netedit Version 1.13.0
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- Detectors -->
+    <e1Detector id="e1_0" lane="-775384756#3_0" pos="23.87" freq="300.00" file="e1_0.xml"/>
+    <e1Detector id="e1_1" lane="-775384756#0_0" pos="54.56" freq="300.00" file="e1_1.xml"/>
+    <e1Detector id="e1_2" lane="-684135616#0_0" pos="61.41" freq="300.00" file="e1_2.xml"/>
+    <e1Detector id="e1_3" lane="-624520076#1_0" pos="26.69" freq="300.00" file="e1_3.xml"/>
+</additional>

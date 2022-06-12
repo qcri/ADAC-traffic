@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-05-18 13:11:24 by Eclipse SUMO netconvert Version 1.13.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvert.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvertUrbanDe.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvertPedestrians.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\ecNetconvertBicycle.typ.xml"/>
+        <ec-files value="ec_bbox.ec.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="ec.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="ec_stops.add.xml"/>
+        <ptline-output value="ec_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <pedestrian>
+        <crossings.guess value="true"/>
+    </pedestrian>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+    </railway>
+
+    <formats>
+        <ec.bike-access value="true"/>
+        <ec.sidewalks value="true"/>
+    </formats>
+
+    <report>
+        <verbose value="true"/>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="10403416" name="الخط الأحمر للمترو: المنصورة ← الرفاع" line="Green" type="subway" vClass="rail_urban" color="0,149,48" completeness="0.91">
+        <route edges="755072662"/>
+        <busStop id="7053545656" name="المنصورة"/>
+        <busStop id="7053545646" name="مشيرب"/>
+        <busStop id="7053545636" name="البدع"/>
+        <busStop id="7053545621" name="القصر الأبيض"/>
+        <busStop id="7053545615" name="مستشفى حمد"/>
+        <busStop id="7053545600" name="المسيلة"/>
+        <busStop id="7053545592" name="الريان القديم"/>
+        <busStop id="7053545584" name="الشقب"/>
+        <busStop id="7053545573" name="مكتبة قطر الوطنية"/>
+        <busStop id="7053545564" name="المدينة التعليمية"/>
+    </ptLine>
+    <ptLine id="10403424" name="الخط الأحمر للمترو: الرفاع ← المنصورة" line="Green" type="subway" vClass="rail_urban" color="0,149,48" completeness="0.91">
+        <route edges="755072661"/>
+        <busStop id="7053538456" name="المدينة التعليمية"/>
+        <busStop id="7053538465" name="مكتبة قطر الوطنية"/>
+        <busStop id="7053538476" name="الشقب"/>
+        <busStop id="7053538484" name="الريان القديم"/>
+        <busStop id="7053545492" name="المسيلة"/>
+        <busStop id="7053545507" name="مستشفى حمد"/>
+        <busStop id="7053545513" name="القصر الأبيض"/>
+        <busStop id="7053545528" name="البدع"/>
+        <busStop id="7053545538" name="مشيرب"/>
+        <busStop id="7053545548" name="المنصورة"/>
+    </ptLine>
+    <ptLine id="10563564" name="Education City Tram (Blue Line)" line="Blue Line" type="tram" vClass="tram" color="blue" completeness="1.00">
+        <route edges="770742892#5 762108004#1 762107941 684135610#0 684135610#1 762107991#0 762107991#1 762107991#2 762107991#3 762107991#4 762107991#5 208527108 -762107993 -1005819190 762107992 762108000#0 762108000#1 762108000#2 762108000#4 762108000#5 762108000#6 762108000#7 762108000#8 762108000#9 762107990#0 762107990#1 684135607#0 684135607#1 684135607#2 684135607#3 762108005#0 762108005#1"/>
+        <busStop id="6409037859" name="Education City Stadium -East"/>
+        <busStop id="6409038194" name="Qatar Academy - South"/>
+        <busStop id="6409038201" name="NorthNest"/>
+        <busStop id="6409038405" name="Qatar Academy - East"/>
+        <busStop id="6409038272" name="Qatar Academy - North"/>
+        <busStop id="6409037874" name="Academy Green Spine"/>
+        <busStop id="7120440202" name="Education City Stadium - East"/>
+    </ptLine>
+    <ptLine id="13475082" name="Education City Tram (Yellow Line)" line="Yellow Line" type="tram" vClass="tram" color="yellow" completeness="1.00">
+        <route edges="762107994#0 762107994#1 762107994#2 762107994#3 762107994#4 762107994#5 684135616#1 775384756#1 775384756#2 775384756#3 775384756#4 775384756#5 775384756#6 775384756#7 775384756#8 1005819190 762108001#0 762108001#1 762108001#2 762108001#3 762108001#4 762108001#5 762263967#0 762263967#1 684135607#0 684135607#1 684135607#2 684135607#3 762108005#0 762108005#1"/>
+        <busStop id="9280145752" name="SouthNest"/>
+        <busStop id="6409038478" name="Oxygen Park"/>
+        <busStop id="9280145749" name="Education City Mosque"/>
+        <busStop id="9280145747" name="Al Khater House"/>
+        <busStop id="9280145745" name="Multaqa"/>
+        <busStop id="9280145743" name="2015"/>
+        <busStop id="9280145763" name="Ceremonial Gate"/>
+        <busStop id="9280145761" name="NorthNest"/>
+        <busStop id="9280145741" name="Qatar Academy - South"/>
+        <busStop id="7120440202" name="Education City Stadium - East"/>
+    </ptLine>
+    <ptLine id="13475083" name="Education City Tram (Yellow Line)" line="Yellow Line" type="tram" vClass="tram" color="yellow" completeness="1.00">
+        <route edges="770742892#5 762108004#1 762107941 684135610#0 684135610#1 762107991#0 762107991#1 762107991#2 762107991#3 762107991#4 762107991#5 208527108 762107999#0 762107999#1 762107999#2 762107999#3 762107999#4 762107999#5 762107999#6 762107999#7 762107999#8 624520076#1 624520076#2 762107995#1 762107995#2 762107995#3"/>
+        <busStop id="6409037859" name="Education City Stadium -East"/>
+        <busStop id="6409038194" name="Qatar Academy - South"/>
+        <busStop id="6409038201" name="NorthNest"/>
+        <busStop id="6409038223" name="Ceremonial Gate"/>
+        <busStop id="6409038254" name="2015"/>
+        <busStop id="6409038432" name="Multaqa"/>
+        <busStop id="6409038441" name="Al Khater House"/>
+        <busStop id="6409038451" name="Education City Mosque"/>
+        <busStop id="6409038477" name="Oxygen Park"/>
+        <busStop id="5897499227" name="SouthNest"/>
+    </ptLine>
+</ptLines>
