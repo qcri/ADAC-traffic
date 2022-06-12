@@ -1,1 +1,0 @@
-sumo-gui -c ec.sumocfg

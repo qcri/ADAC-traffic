@@ -1,78 +1,72 @@
 <additionals>
-    <timedEvent type="SaveTLSSwitchStates" source ="4728408954" dest="tls_switch_states.xml"/>
-    <e1Detector id="e1_0" lane="1042693363#1_0" pos="116.37" freq="300.00" file="e1_0.xml"/>
-    <e1Detector id="e1_1" lane="1042693363#1_1" pos="116.33" freq="300.00" file="e1_1.xml"/>
-    <e1Detector id="e1_10" lane="1042698681#0_0" pos="12.74" freq="300.00" file="e1_10.xml"/>
-    <e1Detector id="e1_11" lane="1042698681#0_1" pos="12.37" freq="300.00" file="e1_11.xml"/>
-    <e1Detector id="e1_12" lane="1042698681#0_2" pos="12.42" freq="300.00" file="e1_12.xml"/>
-    <e1Detector id="e1_13" lane="665453544_0" pos="4.58" freq="300.00" file="e1_13.xml"/>
-    <e1Detector id="e1_14" lane="665453544_1" pos="4.03" freq="300.00" file="e1_14.xml"/>
-    <e1Detector id="e1_15" lane="665453544_2" pos="4.42" freq="300.00" file="e1_15.xml"/>
-    <e1Detector id="e1_16" lane="584750387_1" pos="13.51" freq="300.00" file="e1_16.xml"/>
-    <e1Detector id="e1_17" lane="584750387_2" pos="14.07" freq="300.00" file="e1_17.xml"/>
-    <e1Detector id="e1_18" lane="584750387_0" pos="13.18" freq="300.00" file="e1_18.xml"/>
-    <e1Detector id="e1_19" lane="665453549_0" pos="10.38" freq="300.00" file="e1_19.xml"/>
-    <e1Detector id="e1_2" lane="1042693363#1_2" pos="115.97" freq="300.00" file="e1_2.xml"/>
-    <e1Detector id="e1_20" lane="665453549_2" pos="9.90" freq="300.00" file="e1_20.xml"/>
-    <e1Detector id="e1_21" lane="665453549_1" pos="9.91" freq="300.00" file="e1_21.xml"/>
-    <e1Detector id="e1_22" lane="1042453357_0" pos="3.06" freq="300.00" file="e1_22.xml"/>
-    <e1Detector id="e1_23" lane="1042453357_1" pos="4.01" freq="300.00" file="e1_23.xml"/>
-    <e1Detector id="e1_24" lane="1042453357_2" pos="4.81" freq="300.00" file="e1_24.xml"/>
-    <e1Detector id="e1_25" lane="665453552_0" pos="3.24" freq="300.00" file="e1_25.xml"/>
-    <e1Detector id="e1_26" lane="665453552_1" pos="2.94" freq="300.00" file="e1_26.xml"/>
-    <e1Detector id="e1_27" lane="665453552_2" pos="3.20" freq="300.00" file="e1_27.xml"/>
-    <e1Detector id="e1_28" lane="665453552_1" pos="26.29" freq="300.00" file="e1_28.xml"/>
-    <e1Detector id="e1_29" lane="665453552_2" pos="26.34" freq="300.00" file="e1_29.xml"/>
-    <e1Detector id="e1_3" lane="25931028#5_0" pos="371.89" freq="300.00" file="e1_3.xml"/>
-    <e1Detector id="e1_30" lane="665453552_0" pos="26.31" freq="300.00" file="e1_30.xml"/>
-    <e1Detector id="e1_31" lane="1040882902#1_1" pos="20.93" freq="300.00" file="e1_31.xml"/>
-    <e1Detector id="e1_32" lane="1040882902#1_0" pos="21.00" freq="300.00" file="e1_32.xml"/>
-    <e1Detector id="e1_33" lane="1040882902#1_2" pos="21.06" freq="300.00" file="e1_33.xml"/>
-    <e1Detector id="e1_34" lane="665453550_2" pos="35.64" freq="300.00" file="e1_34.xml"/>
-    <e1Detector id="e1_35" lane="665453550_1" pos="35.36" freq="300.00" file="e1_35.xml"/>
-    <e1Detector id="e1_36" lane="665453550_0" pos="35.56" freq="300.00" file="e1_36.xml"/>
-    <e1Detector id="e1_37" lane="665453546_2" pos="14.17" freq="300.00" file="e1_37.xml"/>
-    <e1Detector id="e1_38" lane="665453546_1" pos="13.49" freq="300.00" file="e1_38.xml"/>
-    <e1Detector id="e1_39" lane="665453546_0" pos="13.48" freq="300.00" file="e1_39.xml"/>
-    <e1Detector id="e1_4" lane="25931028#5_1" pos="371.43" freq="300.00" file="e1_4.xml"/>
-    <e1Detector id="e1_40" lane="584750383#0_2" pos="13.41" freq="300.00" file="e1_40.xml"/>
-    <e1Detector id="e1_41" lane="584750383#0_1" pos="13.81" freq="300.00" file="e1_41.xml"/>
-    <e1Detector id="e1_42" lane="584750383#0_0" pos="13.85" freq="300.00" file="e1_42.xml"/>
-    <e1Detector id="e1_43" lane="584750383#1_2" pos="21.32" freq="300.00" file="e1_43.xml"/>
-    <e1Detector id="e1_44" lane="584750383#1_1" pos="21.19" freq="300.00" file="e1_44.xml"/>
-    <e1Detector id="e1_45" lane="584750383#1_0" pos="20.69" freq="300.00" file="e1_45.xml"/>
-    <e1Detector id="e1_46" lane="1042446268_2" pos="192.32" freq="300.00" file="e1_46.xml"/>
-    <e1Detector id="e1_47" lane="1042446268_1" pos="192.98" freq="300.00" file="e1_47.xml"/>
-    <e1Detector id="e1_48" lane="665453547_2" pos="18.44" freq="300.00" file="e1_48.xml"/>
-    <e1Detector id="e1_49" lane="1042446268_0" pos="192.03" freq="300.00" file="e1_49.xml"/>
-    <e1Detector id="e1_5" lane="25931028#5_2" pos="371.99" freq="300.00" file="e1_5.xml"/>
-    <e1Detector id="e1_50" lane="665453547_1" pos="18.75" freq="300.00" file="e1_50.xml"/>
-    <e1Detector id="e1_51" lane="665453547_0" pos="18.97" freq="300.00" file="e1_51.xml"/>
-    <e1Detector id="e1_52" lane="622873931#0_1" pos="7.57" freq="300.00" file="e1_52.xml"/>
-    <e1Detector id="e1_53" lane="622873931#0_0" pos="7.28" freq="300.00" file="e1_53.xml"/>
-    <e1Detector id="e1_54" lane="665453553_2" pos="27.09" freq="300.00" file="e1_54.xml"/>
-    <e1Detector id="e1_55" lane="665453553_1" pos="27.11" freq="300.00" file="e1_55.xml"/>
-    <e1Detector id="e1_56" lane="665453553_0" pos="26.45" freq="300.00" file="e1_56.xml"/>
-    <e1Detector id="e1_57" lane="622873934#8_1" pos="2.77" freq="300.00" file="e1_57.xml"/>
-    <e1Detector id="e1_58" lane="622873934#8_0" pos="2.19" freq="300.00" file="e1_58.xml"/>
-    <e1Detector id="e1_59" lane="479797339_2" pos="306.64" freq="300.00" file="e1_59.xml"/>
-    <e1Detector id="e1_6" lane="25931028#5_3" pos="371.54" freq="300.00" file="e1_6.xml"/>
-    <e1Detector id="e1_60" lane="1032698564#0_0" pos="98.20" freq="300.00" file="e1_60.xml"/>
-    <e1Detector id="e1_61" lane="479797339_1" pos="306.99" freq="300.00" file="e1_61.xml"/>
-    <e1Detector id="e1_62" lane="479797339_0" pos="306.61" freq="300.00" file="e1_62.xml"/>
-    <e1Detector id="e1_63" lane="1042728028#0_2" pos="2.91" freq="300.00" file="e1_63.xml"/>
-    <e1Detector id="e1_64" lane="1042728028#0_1" pos="4.19" freq="300.00" file="e1_64.xml"/>
-    <e1Detector id="e1_65" lane="1042728028#0_0" pos="3.17" freq="300.00" file="e1_65.xml"/>
-    <e1Detector id="e1_66" lane="618371789#1_0" pos="3.12" freq="300.00" file="e1_66.xml"/>
-    <e1Detector id="e1_67" lane="618371789#1_1" pos="3.11" freq="300.00" file="e1_67.xml"/>
-    <e1Detector id="e1_68" lane="618371789#1_2" pos="2.84" freq="300.00" file="e1_68.xml"/>
-    <e1Detector id="e1_69" lane="764267605_0" pos="85.12" freq="300.00" file="e1_69.xml"/>
-    <e1Detector id="e1_7" lane="665453548_0" pos="39.66" freq="300.00" file="e1_7.xml"/>
-    <e1Detector id="e1_70" lane="764267605_1" pos="86.11" freq="300.00" file="e1_70.xml"/>
-    <e1Detector id="e1_71" lane="764267605_2" pos="84.43" freq="300.00" file="e1_71.xml"/>
-    <e1Detector id="e1_72" lane="764267605_1" pos="3.11" freq="300.00" file="e1_72.xml"/>
-    <e1Detector id="e1_73" lane="764267605_2" pos="3.19" freq="300.00" file="e1_73.xml"/>
-    <e1Detector id="e1_74" lane="764267605_0" pos="3.99" freq="300.00" file="e1_74.xml"/>
-    <e1Detector id="e1_8" lane="665453548_1" pos="40.49" freq="300.00" file="e1_8.xml"/>
-    <e1Detector id="e1_9" lane="665453548_2" pos="38.51" freq="300.00" file="e1_9.xml"/>
+    <timedEvent type="SaveTLSSwitchStates" source ="6317" dest="tls_switch_states.xml"/>
+    <e1Detector id="E_in_back_0" lane="7574_0" pos="12.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_in_back_0.txt" friendlyPos="1"/>
+    <e1Detector id="E_in_back_1" lane="7574_1" pos="12.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_in_back_1.txt" friendlyPos="1"/>
+    <e1Detector id="E_in_back_2" lane="7574_2" pos="12.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_in_back_2.txt" friendlyPos="1"/>
+    <e1Detector id="E_in_for_0" lane="7574_0" pos="220.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_in_for_0.txt" friendlyPos="1"/>
+    <e1Detector id="E_in_for_1" lane="7574_1" pos="220.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_in_for_1.txt" friendlyPos="1"/>
+    <e1Detector id="E_in_for_2" lane="7574_2" pos="220.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_in_for_2.txt" friendlyPos="1"/>
+    <e1Detector id="E_in_round_0" lane="7549_0" pos="30.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_in_round_0.txt" friendlyPos="1"/>
+    <e1Detector id="E_in_round_1" lane="7549_1" pos="30.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_in_round_1.txt" friendlyPos="1"/>
+    <e1Detector id="E_in_round_2" lane="7549_2" pos="30.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_in_round_2.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_back_0" lane="7578_0" pos="20.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_back_0.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_back_1" lane="7578_1" pos="20.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_back_1.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_back_2" lane="7578_2" pos="20.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_back_2.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_back_3" lane="7578_3" pos="20.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_back_3.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_for_0" lane="7557_0" pos="20.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_for_0.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_for_1" lane="7557_1" pos="20.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_for_1.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_for_2" lane="7557_2" pos="20.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_for_2.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_round_0" lane="7548_0" pos="10.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_round_0.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_round_1" lane="7548_1" pos="10.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_round_1.txt" friendlyPos="1"/>
+    <e1Detector id="E_out_round_2" lane="7548_2" pos="10.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/E_out_round_2.txt" friendlyPos="1"/>
+    <e1Detector id="N_in_back_0" lane="10339_0" pos="100.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_in_back_0.txt" friendlyPos="1"/>
+    <e1Detector id="N_in_back_1" lane="10339_1" pos="100.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_in_back_1.txt" friendlyPos="1"/>
+    <e1Detector id="N_in_back_2" lane="10339_2" pos="100.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_in_back_2.txt" friendlyPos="1"/>
+    <e1Detector id="N_in_for_0" lane="7562_0" pos="150.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_in_for_0.txt" friendlyPos="1"/>
+    <e1Detector id="N_in_for_1" lane="7562_1" pos="150.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_in_for_1.txt" friendlyPos="1"/>
+    <e1Detector id="N_in_for_2" lane="7562_2" pos="150.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_in_for_2.txt" friendlyPos="1"/>
+    <e1Detector id="N_in_round_0" lane="7552_0" pos="80.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_in_round_0.txt" friendlyPos="1"/>
+    <e1Detector id="N_in_round_1" lane="7552_1" pos="80.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_in_round_1.txt" friendlyPos="1"/>
+    <e1Detector id="N_in_round_2" lane="7552_2" pos="80.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_in_round_2.txt" friendlyPos="1"/>
+    <e1Detector id="N_out_back_0" lane="7559_0" pos="260.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_out_back_0.txt" friendlyPos="1"/>
+    <e1Detector id="N_out_back_1" lane="7559_1" pos="260.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_out_back_1.txt" friendlyPos="1"/>
+    <e1Detector id="N_out_for_0" lane="7559_0" pos="20.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_out_for_0.txt" friendlyPos="1"/>
+    <e1Detector id="N_out_for_1" lane="7559_1" pos="20.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_out_for_1.txt" friendlyPos="1"/>
+    <e1Detector id="N_out_round_0" lane="7550_0" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_out_round_0.txt" friendlyPos="1"/>
+    <e1Detector id="N_out_round_1" lane="7550_1" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_out_round_1.txt" friendlyPos="1"/>
+    <e1Detector id="N_out_round_2" lane="7550_2" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/N_out_round_2.txt" friendlyPos="1"/>
+    <e1Detector id="S_in_back_0" lane="7547_0" pos="10.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_in_back_0.txt" friendlyPos="1"/>
+    <e1Detector id="S_in_back_1" lane="7547_1" pos="10.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_in_back_1.txt" friendlyPos="1"/>
+    <e1Detector id="S_in_back_2" lane="7547_2" pos="10.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_in_back_2.txt" friendlyPos="1"/>
+    <e1Detector id="S_in_for_0" lane="7547_0" pos="210.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_in_for_0.txt" friendlyPos="1"/>
+    <e1Detector id="S_in_for_1" lane="7547_1" pos="210.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_in_for_1.txt" friendlyPos="1"/>
+    <e1Detector id="S_in_for_2" lane="7547_2" pos="210.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_in_for_2.txt" friendlyPos="1"/>
+    <e1Detector id="S_in_round_0" lane="7556_0" pos="100.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_in_round_0.txt" friendlyPos="1"/>
+    <e1Detector id="S_in_round_1" lane="7556_1" pos="100.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_in_round_1.txt" friendlyPos="1"/>
+    <e1Detector id="S_in_round_2" lane="7556_2" pos="100.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_in_round_2.txt" friendlyPos="1"/>
+    <e1Detector id="S_out_back_0" lane="5484_0" pos="48.96" freq="100.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_out_back_0.txt" friendlyPos="1"/>
+    <e1Detector id="S_out_back_1" lane="5484_1" pos="49.13" freq="100.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_out_back_1.txt" friendlyPos="1"/>
+    <e1Detector id="S_out_for_0" lane="7561_0" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_out_for_0.txt" friendlyPos="1"/>
+    <e1Detector id="S_out_for_1" lane="7561_1" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_out_for_1.txt" friendlyPos="1"/>
+    <e1Detector id="S_out_round_0" lane="7556_0" pos="2.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_out_round_0.txt" friendlyPos="1"/>
+    <e1Detector id="S_out_round_1" lane="7556_1" pos="2.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_out_round_1.txt" friendlyPos="1"/>
+    <e1Detector id="S_out_round_2" lane="7556_2" pos="2.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/S_out_round_2.txt" friendlyPos="1"/>
+    <e1Detector id="W_in_back_0" lane="6124_0" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_in_back_0.txt" friendlyPos="1"/>
+    <e1Detector id="W_in_back_1" lane="6124_1" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_in_back_1.txt" friendlyPos="1"/>
+    <e1Detector id="W_in_back_2" lane="6124_2" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_in_back_2.txt" friendlyPos="1"/>
+    <e1Detector id="W_in_for_0" lane="7560_0" pos="110.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_in_for_0.txt" friendlyPos="1"/>
+    <e1Detector id="W_in_for_1" lane="7560_1" pos="110.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_in_for_1.txt" friendlyPos="1"/>
+    <e1Detector id="W_in_for_2" lane="7560_2" pos="110.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_in_for_2.txt" friendlyPos="1"/>
+    <e1Detector id="W_in_round_0" lane="7554_0" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_in_round_0.txt" friendlyPos="1"/>
+    <e1Detector id="W_in_round_1" lane="7554_1" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_in_round_1.txt" friendlyPos="1"/>
+    <e1Detector id="W_in_round_2" lane="7554_2" pos="40.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_in_round_2.txt" friendlyPos="1"/>
+    <e1Detector id="W_out_back_0" lane="7543_0" pos="131.46" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_out_back_0.txt" friendlyPos="1"/>
+    <e1Detector id="W_out_back_1" lane="7543_1" pos="131.46" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_out_back_1.txt" friendlyPos="1"/>
+    <e1Detector id="W_out_back_2" lane="7543_2" pos="131.46" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_out_back_2.txt" friendlyPos="1"/>
+    <e1Detector id="W_out_for_0" lane="7564_0" pos="30.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_out_for_0.txt" friendlyPos="1"/>
+    <e1Detector id="W_out_for_1" lane="7564_1" pos="30.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_out_for_1.txt" friendlyPos="1"/>
+    <e1Detector id="W_out_for_2" lane="7564_2" pos="30.00" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_out_for_2.txt" friendlyPos="1"/>
+    <e1Detector id="W_out_round_0" lane="7553_0" pos="26.16" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_out_round_0.txt" friendlyPos="1"/>
+    <e1Detector id="W_out_round_1" lane="7553_1" pos="26.16" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_out_round_1.txt" friendlyPos="1"/>
+    <e1Detector id="W_out_round_2" lane="7553_2" pos="26.16" freq="20.00" file="C:/Users/hamza/Documents/ADAC-traffic/tmp/W_out_round_2.txt" friendlyPos="1"/>
 </additionals>
