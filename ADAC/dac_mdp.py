@@ -418,6 +418,12 @@ class dac_builder(object):
         #tqdm.write(f'replay df before duplicate removal length: {len(replay_df)}, sample: {replay_df.sample(3)}')
         replay_df.drop_duplicates(keep='first', inplace=True)
         #tqdm.write(f'replay df after duplicate removal length: {len(replay_df)}, sample: {replay_df.sample(3)}')
+        ## normalize reward to make them non-negative
+        min_reward = min(replay_df['reward'])
+        if min_reward < 0:
+            tqdm.write(f'replay df rewards are made non-negative by adding constant {-min_reward}')
+            replay_df.loc[:, 'reward'] = replay_df['reward'].apply(lambda v: -min_reward + v)
+
         return replay_df
     
     def _get_activation(self, name):
